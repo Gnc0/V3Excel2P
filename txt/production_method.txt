@@ -1,0 +1,265 @@
+# sheet is production_method
+高炉炼铁 = {
+	unlocking_technologies = {
+		a
+		b
+	}
+	unlocking_production_methods = {
+		生产方式甲
+	}
+	disallowing_laws = {
+		法律甲
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_coal_add = 20
+			输入_铁矿石 = 20
+			输出_铁 = 40
+		}
+		level_scaled = {
+			劳工 = 4500
+		}
+	}
+}
+泡钢法 = {
+	unlocking_technologies = {
+		a
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			煤炭 = 25
+			铁矿石 = 40
+			钢 = 40
+			铁 = 30
+		}
+		level_scaled = {
+			劳工 = 4000
+			机械师 = 300
+			工程师 = 200
+		}
+	}
+}
+贝塞麦转炉炼钢法 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			煤炭 = 30
+			铁矿石 = 60
+			钢 = 60
+			铁 = 35
+		}
+		level_scaled = {
+			劳工 = 3500
+			机械师 = 600
+			工程师 = 400
+		}
+	}
+}
+平炉炼钢法 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			煤炭 = 35
+			铁矿石 = 80
+			钢 = 80
+			铁 = 40
+		}
+		level_scaled = {
+			劳工 = 3000
+			机械师 = 800
+			工程师 = 600
+		}
+	}
+}
+冲击分离法 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			铁矿石 = 40
+			灵能水晶 = 30
+			钢 = 60
+			铁 = 35
+		}
+		level_scaled = {
+			劳工 = 4000
+			法士 = 500
+		}
+	}
+}
+漂浮分离法 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			铁矿石 = 50
+			灵能水晶 = 40
+			钢 = 80
+			铁 = 40
+		}
+		level_scaled = {
+			劳工 = 3500
+			法士 = 750
+		}
+	}
+}
+魔能丝线分离法 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			铁矿石 = 60
+			灵能水晶 = 50
+			钢 = 100
+			铁 = 45
+		}
+		level_scaled = {
+			劳工 = 3000
+			法士 = 1000
+		}
+	}
+}
+水管锅炉 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			煤炭 = 5
+			工具 = 5
+		}
+		level_scaled = {
+			劳工 = -500
+			机械师 = 350
+			工程师 = 150
+		}
+	}
+}
+旋转阀发动机 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			煤炭 = 10
+			工具 = 5
+		}
+		level_scaled = {
+			劳工 = -1250
+			机械师 = 250
+			工程师 = 250
+		}
+	}
+}
+基础魔偶 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			工具 = 2
+			魔偶 = 1
+			灵能水晶 = 2
+		}
+		level_scaled = {
+			劳工 = -500
+			法士 = 200
+		}
+	}
+}
+智能魔偶 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			工具 = 2
+			魔偶 = 2
+			灵能水晶 = 4
+		}
+		level_scaled = {
+			劳工 = -1250
+			法士 = 400
+		}
+	}
+}
+强智能魔偶 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			工具 = 2
+			魔偶 = 3
+			灵能水晶 = 6
+		}
+		level_scaled = {
+			劳工 = -1750
+			法士 = 600
+		}
+	}
+}
+魔偶流水线 = {
+	unlocking_technologies = {
+	}
+	unlocking_production_methods = {
+	}
+	disallowing_laws = {
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			橡胶 = 5
+			煤炭 = 8
+			工具 = 5
+			魔偶 = 2
+			灵能水晶 = 3
+		}
+		level_scaled = {
+			劳工 = -3000
+			机械师 = 150
+			工程师 = 350
+			法士 = 400
+		}
+	}
+}
