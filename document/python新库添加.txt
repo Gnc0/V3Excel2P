@@ -1,9 +1,0 @@
-目前下载的库包括numpy、pandas、oepnpyxl和xlrd
-如果你需要额外扩展python的库，那么以下是numpy的扩展代码，建个bat文件把这些粘贴进去，把numpy改成你想要的库的名字即可
-但是要注意有些库的安装，如果先后顺序乱了，可能会出问题，导致该目录的python报废，所以最好复制一份做备份
-====
-@echo off
-cd ../python_tools/toolVenv/Scripts
-pip.exe install numpy -t ../Lib/site-packages
-pause
-====
