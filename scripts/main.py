@@ -278,8 +278,7 @@ if __name__ == '__main__':
     stream = os.listdir(excelPath) 
     
     #声明可用后缀条件列表
-    condition_suffix = list() 
-    condition_suffix = '.xlsx'
+    condition_suffix = ['.xlsx','.xlsm']
     
     #声明不可用后缀条件列表
     condition_ban = dict() 
@@ -301,6 +300,9 @@ if __name__ == '__main__':
         if file[:2] == '~$':
             ifAppendFile = False
             print('警告：检测到可能有正在打开的excel文件，这可能导致转表失败，请查验\n')
+        if file[:1] == '!':
+            ifAppendFile = False
+            print('跳过 ! 开头的文件：'+str(file)+'\n')
         if ifAppendFile:
             fileList.append(file)
     #特殊处理的列表，暂无开发

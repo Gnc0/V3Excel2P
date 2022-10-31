@@ -16,7 +16,7 @@ Tools that transfer excel to P for Vicotira3 ; 维多利亚3的转表工具
 
 2、使用python_tools3.10，不支持win7
 
-## 工具添加说明
+## 工具扩展说明
 
 excel下的Transfer.bat自动调用Scripts的main.py
 

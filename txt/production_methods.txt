@@ -24,6 +24,10 @@ pm_merchant_guilds_heavy_industry = {
 	}
 	type = building_aristocrats_shares_add
 	value = 2
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_church_owned_heavy_industry = {
 	unlocking_technologies = {
@@ -42,6 +46,10 @@ pm_church_owned_heavy_industry = {
 		level_scaled = {
 			教士 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_privately_owned_heavy_industry = {
@@ -69,6 +77,10 @@ pm_privately_owned_heavy_industry = {
 	}
 	type = building_aristocrats_shares_add
 	value = 1
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_publicly_traded_heavy_industry = {
 	unlocking_technologies = {
@@ -93,6 +105,10 @@ pm_publicly_traded_heavy_industry = {
 			building_capitalists_shares_add = 5
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_government_run_heavy_industry = {
 	unlocking_technologies = {
@@ -111,6 +127,10 @@ pm_government_run_heavy_industry = {
 		level_scaled = {
 			官僚 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_elementary_worker_cooperative_heavy_industry = {
@@ -137,6 +157,10 @@ pm_elementary_worker_cooperative_heavy_industry = {
 	}
 	type = building_machinists_shares_add
 	value = 2
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_advanced_worker_cooperative_heavy_industry = {
 	unlocking_technologies = {
@@ -162,6 +186,10 @@ pm_advanced_worker_cooperative_heavy_industry = {
 	}
 	type = building_magiciteain_shares_add
 	value = 2
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_mage_owned_heavy_industry = {
 	unlocking_technologies = {
@@ -177,6 +205,10 @@ pm_mage_owned_heavy_industry = {
 			运力 = 9
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_science_base = {
 	unlocking_technologies = {
@@ -190,6 +222,10 @@ pm_no_science_base = {
 			煤炭 = 3
 			铁矿石 = 3
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_blast_furnace_building = {
@@ -210,6 +246,10 @@ pm_blast_furnace_building = {
 	}
 	type = 生铁
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_blister_steel_process = {
 	unlocking_technologies = {
@@ -231,6 +271,10 @@ pm_blister_steel_process = {
 	}
 	type = 生铁
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_bessemer_process = {
 	unlocking_technologies = {
@@ -252,6 +296,10 @@ pm_bessemer_process = {
 	}
 	type = 生铁
 	value = 45
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_open_hearth_process = {
 	unlocking_technologies = {
@@ -273,6 +321,10 @@ pm_open_hearth_process = {
 	}
 	type = 生铁
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 no_magic_base_production = {
 	unlocking_technologies = {
@@ -280,6 +332,10 @@ no_magic_base_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_magic_impact_process = {
@@ -302,6 +358,10 @@ pm_magic_impact_process = {
 	}
 	type = 生铁
 	value = 45
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_magic_floating_process = {
 	unlocking_technologies = {
@@ -323,6 +383,10 @@ pm_magic_floating_process = {
 	}
 	type = 生铁
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_magic_thread_seperation_process = {
 	unlocking_technologies = {
@@ -344,6 +408,10 @@ pm_magic_thread_seperation_process = {
 	}
 	type = 生铁
 	value = 55
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_science_automation = {
 	unlocking_technologies = {
@@ -351,6 +419,10 @@ pm_no_science_automation = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_watertube_boiler_building_steel_mills = {
@@ -373,6 +445,10 @@ pm_watertube_boiler_building_steel_mills = {
 			工程师 = 50
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_rotary_valve_engine_building_steel_mills = {
 	unlocking_technologies = {
@@ -394,6 +470,10 @@ pm_rotary_valve_engine_building_steel_mills = {
 			工程师 = 150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magic_automation_building_steel_mill = {
 	unlocking_technologies = {
@@ -401,6 +481,10 @@ pm_no_magic_automation_building_steel_mill = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_steel_mill = {
@@ -426,6 +510,10 @@ pm_base_doll_building_steel_mill = {
 			法士 = 50
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intellectual_doll_building_steel_mill = {
 	unlocking_technologies = {
@@ -449,6 +537,10 @@ pm_intellectual_doll_building_steel_mill = {
 			工程师 = 0
 			法士 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_super_doll_building_steel_mill = {
@@ -474,6 +566,10 @@ pm_super_doll_building_steel_mill = {
 			法士 = 150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magiscientia_automation_building_steel_mill = {
 	unlocking_technologies = {
@@ -481,6 +577,10 @@ pm_no_magiscientia_automation_building_steel_mill = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_steel_mill = {
@@ -507,6 +607,10 @@ pm_doll_based_assemble_line_building_steel_mill = {
 			法士 = 250
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_reciprocating_engines = {
 	unlocking_technologies = {
@@ -525,6 +629,10 @@ pm_reciprocating_engines = {
 	}
 	type = 引擎
 	value = 80
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_rotary_valve_engines = {
 	unlocking_technologies = {
@@ -547,6 +655,10 @@ pm_rotary_valve_engines = {
 	}
 	type = 引擎
 	value = 120
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_universal_steam_core = {
 	unlocking_technologies = {
@@ -571,6 +683,10 @@ pm_universal_steam_core = {
 	}
 	type = 引擎
 	value = 180
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabled_building_motor_industry = {
 	unlocking_technologies = {
@@ -578,6 +694,10 @@ pm_automation_disabled_building_motor_industry = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_watertube_boiler_building_motor_industry = {
@@ -599,6 +719,10 @@ pm_watertube_boiler_building_motor_industry = {
 			工程师 = 150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_rotary_valve_engine_motor_industry = {
 	unlocking_technologies = {
@@ -618,6 +742,10 @@ pm_rotary_valve_engine_motor_industry = {
 			机工 = 200
 			工程师 = 200
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_assembly_lines_motor_industry = {
@@ -639,6 +767,10 @@ pm_assembly_lines_motor_industry = {
 			机工 = 150
 			工程师 = 250
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_motor_industry = {
@@ -664,6 +796,10 @@ pm_doll_based_assemble_line_motor_industry = {
 			法士 = 500
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_basic_magical_dolls = {
 	unlocking_technologies = {
@@ -687,6 +823,10 @@ pm_basic_magical_dolls = {
 	}
 	type = 魔偶
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intelligent_magical_dolls = {
 	unlocking_technologies = {
@@ -710,6 +850,10 @@ pm_intelligent_magical_dolls = {
 	}
 	type = 魔偶
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_strong_intelligent_magical_dolls = {
 	unlocking_technologies = {
@@ -735,6 +879,10 @@ pm_strong_intelligent_magical_dolls = {
 	}
 	type = 魔偶
 	value = 70
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabled_building_doll_industry = {
 	unlocking_technologies = {
@@ -742,6 +890,10 @@ pm_automation_disabled_building_doll_industry = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_doll_industry = {
@@ -761,6 +913,10 @@ pm_base_doll_building_doll_industry = {
 		level_scaled = {
 			法士 = -200
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_intellectual_doll_building_doll_industry = {
@@ -782,6 +938,10 @@ pm_intellectual_doll_building_doll_industry = {
 			法师 = -50
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_super_doll_building_doll_industry = {
 	unlocking_technologies = {
@@ -801,6 +961,10 @@ pm_super_doll_building_doll_industry = {
 			法士 = -500
 			法师 = -100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_doll_industry = {
@@ -825,6 +989,10 @@ pm_doll_based_assemble_line_building_doll_industry = {
 			法师 = -150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_refinery = {
 	unlocking_technologies = {
@@ -847,6 +1015,10 @@ pm_refinery = {
 	}
 	type = 秘银
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_masculine_and_feminine_metal_fusing = {
 	unlocking_technologies = {
@@ -869,6 +1041,10 @@ pm_masculine_and_feminine_metal_fusing = {
 	}
 	type = 秘银
 	value = 100
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_element_teleportation = {
 	unlocking_technologies = {
@@ -891,6 +1067,10 @@ pm_element_teleportation = {
 	}
 	type = 秘银
 	value = 140
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabled_building_alchemy_industry = {
 	unlocking_technologies = {
@@ -898,6 +1078,10 @@ pm_automation_disabled_building_alchemy_industry = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_alchemy_industry = {
@@ -916,6 +1100,10 @@ pm_base_doll_building_alchemy_industry = {
 		level_scaled = {
 			法士 = -200
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_intellectual_doll_building_alchemy_industry = {
@@ -936,6 +1124,10 @@ pm_intellectual_doll_building_alchemy_industry = {
 			法师 = -50
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_super_doll_building_alchemy_industry = {
 	unlocking_technologies = {
@@ -954,6 +1146,10 @@ pm_super_doll_building_alchemy_industry = {
 			法士 = -500
 			法师 = -100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_alchemy_industry = {
@@ -974,6 +1170,10 @@ pm_doll_based_assemble_line_building_alchemy_industry = {
 			法士 = -800
 			法师 = -150
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_extract_ranch = {
@@ -998,6 +1198,10 @@ pm_extract_ranch = {
 	}
 	type = building_livestock_birth_mult
 	value = 0.5
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_extract_from_body = {
 	unlocking_technologies = {
@@ -1021,6 +1225,10 @@ pm_extract_from_body = {
 	}
 	type = building_laborers_mortality_mult
 	value = 0.25
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_standard_wands = {
 	unlocking_technologies = {
@@ -1041,6 +1249,10 @@ pm_standard_wands = {
 	}
 	type = 泽洛
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_papa_made_magic_rifle = {
 	unlocking_technologies = {
@@ -1061,6 +1273,10 @@ pm_papa_made_magic_rifle = {
 	}
 	type = 魔能轻武器
 	value = 80
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_standard_magic_rifle = {
 	unlocking_technologies = {
@@ -1082,6 +1298,10 @@ pm_standard_magic_rifle = {
 	}
 	type = 魔能轻武器
 	value = 120
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_compound_magic_rifle = {
 	unlocking_technologies = {
@@ -1104,6 +1324,10 @@ pm_compound_magic_rifle = {
 	}
 	type = 魔能轻武器
 	value = 160
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabled_building_magical_small_arms_industry = {
 	unlocking_technologies = {
@@ -1111,6 +1335,10 @@ pm_automation_disabled_building_magical_small_arms_industry = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_magical_small_arms_industry = {
@@ -1133,6 +1361,10 @@ pm_base_doll_building_magical_small_arms_industry = {
 			法士 = 100
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intellectual_doll_building_magical_small_arms_industry = {
 	unlocking_technologies = {
@@ -1153,6 +1385,10 @@ pm_intellectual_doll_building_magical_small_arms_industry = {
 			劳工 = -2000
 			法士 = 200
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_super_doll_building_magical_small_arms_industry = {
@@ -1175,6 +1411,10 @@ pm_super_doll_building_magical_small_arms_industry = {
 			法士 = 300
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_doll_based_assemble_line_building_magical_small_arms_industry = {
 	unlocking_technologies = {
@@ -1196,6 +1436,10 @@ pm_doll_based_assemble_line_building_magical_small_arms_industry = {
 			法士 = 400
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_psionic_strike_method = {
 	unlocking_technologies = {
@@ -1215,6 +1459,10 @@ pm_psionic_strike_method = {
 	}
 	type = 灵能水晶
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_psionic_assembling_method = {
 	unlocking_technologies = {
@@ -1234,6 +1482,10 @@ pm_psionic_assembling_method = {
 	}
 	type = 灵能水晶
 	value = 65
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_psionic_summoning_method = {
 	unlocking_technologies = {
@@ -1253,6 +1505,10 @@ pm_psionic_summoning_method = {
 	}
 	type = 灵能水晶
 	value = 90
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magical_floating_vehicle_production = {
 	unlocking_technologies = {
@@ -1260,6 +1516,10 @@ pm_no_magical_floating_vehicle_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_magical_floating_vehicle_production = {
@@ -1284,6 +1544,10 @@ pm_magical_floating_vehicle_production = {
 	}
 	type = 魔能浮空车
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabled_building_magical_equipment_industry = {
 	unlocking_technologies = {
@@ -1291,6 +1555,10 @@ pm_automation_disabled_building_magical_equipment_industry = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_magical_equipment_industry = {
@@ -1311,6 +1579,10 @@ pm_base_doll_building_magical_equipment_industry = {
 			法士 = 100
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intellectual_doll_building_magical_equipment_industry = {
 	unlocking_technologies = {
@@ -1330,6 +1602,10 @@ pm_intellectual_doll_building_magical_equipment_industry = {
 			法士 = 200
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_super_doll_building_magical_equipment_industry = {
 	unlocking_technologies = {
@@ -1348,6 +1624,10 @@ pm_super_doll_building_magical_equipment_industry = {
 			劳工 = -3000
 			法士 = 300
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_magical_equipment_industry = {
@@ -1369,6 +1649,10 @@ pm_doll_based_assemble_line_building_magical_equipment_industry = {
 			法士 = 400
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_aerocraft_production = {
 	unlocking_technologies = {
@@ -1376,6 +1660,10 @@ pm_no_aerocraft_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_aeroplane_production = {
@@ -1398,6 +1686,10 @@ pm_aeroplane_production = {
 	}
 	type = 蒸汽飞行器
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_helicarrier = {
 	unlocking_technologies = {
@@ -1420,6 +1712,10 @@ pm_helicarrier = {
 	}
 	type = 蒸汽飞行器
 	value = 80
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_mech_production = {
 	unlocking_technologies = {
@@ -1427,6 +1723,10 @@ pm_no_mech_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_steam_mech_production = {
@@ -1449,6 +1749,10 @@ pm_steam_mech_production = {
 	}
 	type = 蒸汽机甲
 	value = 30
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_science_mech_production = {
 	unlocking_technologies = {
@@ -1472,6 +1776,10 @@ pm_science_mech_production = {
 	}
 	type = 魔导机甲
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabledr_building_war_machine_industry = {
 	unlocking_technologies = {
@@ -1479,6 +1787,10 @@ pm_automation_disabledr_building_war_machine_industry = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_watertube_boiler_building_war_machine_industry = {
@@ -1499,6 +1811,10 @@ pm_watertube_boiler_building_war_machine_industry = {
 			工程师 = 150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_rotary_valve_engine_building_war_machine_industry = {
 	unlocking_technologies = {
@@ -1517,6 +1833,10 @@ pm_rotary_valve_engine_building_war_machine_industry = {
 			机工 = 250
 			工程师 = 250
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_assembly_lines_building_war_machine_industry = {
@@ -1539,6 +1859,10 @@ pm_assembly_lines_building_war_machine_industry = {
 			机工 = 150
 			工程师 = 350
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_war_machine_industry = {
@@ -1566,6 +1890,10 @@ pm_doll_based_assemble_line_building_war_machine_industry = {
 			法士 = 250
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magical_aerocraft_production = {
 	unlocking_technologies = {
@@ -1573,6 +1901,10 @@ pm_no_magical_aerocraft_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_magical_floating_platform_production = {
@@ -1595,6 +1927,10 @@ pm_magical_floating_platform_production = {
 	}
 	type = 魔能飞行器
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_magical_floating_city_production = {
 	unlocking_technologies = {
@@ -1616,6 +1952,10 @@ pm_magical_floating_city_production = {
 	}
 	type = 魔能飞行器
 	value = 80
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magical_mech_production = {
 	unlocking_technologies = {
@@ -1623,6 +1963,10 @@ pm_no_magical_mech_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_magical_mech_production = {
@@ -1645,6 +1989,10 @@ pm_magical_mech_production = {
 	}
 	type = 魔能机甲
 	value = 30
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_magiscientia_mech_production = {
 	unlocking_technologies = {
@@ -1668,6 +2016,10 @@ pm_magiscientia_mech_production = {
 	}
 	type = 魔导机甲
 	value = 50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_automation_disabled = {
 	unlocking_technologies = {
@@ -1675,6 +2027,10 @@ pm_automation_disabled = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_magic_war_machine_industry = {
@@ -1695,6 +2051,10 @@ pm_base_doll_building_magic_war_machine_industry = {
 			法士 = 50
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intellectual_doll_building_magic_war_machine_industry = {
 	unlocking_technologies = {
@@ -1714,6 +2074,10 @@ pm_intellectual_doll_building_magic_war_machine_industry = {
 			法士 = 100
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_super_doll_building_magic_war_machine_industry = {
 	unlocking_technologies = {
@@ -1732,6 +2096,10 @@ pm_super_doll_building_magic_war_machine_industry = {
 			劳工 = -1500
 			法士 = 150
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_magic_war_machine_industry = {
@@ -1756,6 +2124,10 @@ pm_doll_based_assemble_line_building_magic_war_machine_industry = {
 			法士 = 250
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_muskets = {
 	unlocking_technologies = {
@@ -1778,6 +2150,10 @@ pm_muskets = {
 	}
 	type = 轻武器
 	value = 40
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_rifles = {
 	unlocking_technologies = {
@@ -1802,6 +2178,10 @@ pm_rifles = {
 	}
 	type = 轻武器
 	value = 70
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_repeaters = {
 	unlocking_technologies = {
@@ -1826,6 +2206,10 @@ pm_repeaters = {
 	}
 	type = 轻武器
 	value = 90
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_bolt_action_rifles = {
 	unlocking_technologies = {
@@ -1849,6 +2233,10 @@ pm_bolt_action_rifles = {
 	}
 	type = 轻武器
 	value = 120
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_artillery_production = {
 	unlocking_technologies = {
@@ -1856,6 +2244,10 @@ pm_no_artillery_production = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_cannons = {
@@ -1878,6 +2270,10 @@ pm_cannons = {
 	}
 	type = 火炮
 	value = 10
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_smoothbores = {
 	unlocking_technologies = {
@@ -1899,6 +2295,10 @@ pm_smoothbores = {
 	}
 	type = 火炮
 	value = 20
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_breech_loaders = {
 	unlocking_technologies = {
@@ -1919,6 +2319,10 @@ pm_breech_loaders = {
 	}
 	type = 火炮
 	value = 30
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_science_automation_disabled = {
 	unlocking_technologies = {
@@ -1926,6 +2330,10 @@ pm_science_automation_disabled = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_watertube_boiler_building_arms_industry = {
@@ -1944,6 +2352,10 @@ pm_watertube_boiler_building_arms_industry = {
 			劳工 = -1000
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_rotary_valve_engine_building_arms_industry = {
 	unlocking_technologies = {
@@ -1960,6 +2372,10 @@ pm_rotary_valve_engine_building_arms_industry = {
 		level_scaled = {
 			劳工 = -2000
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_assembly_lines_building_arms_industry = {
@@ -1980,6 +2396,10 @@ pm_assembly_lines_building_arms_industry = {
 			机工 = 500
 			工程师 = 250
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_arms_industry = {
@@ -2004,6 +2424,10 @@ pm_doll_based_assemble_line_building_arms_industry = {
 			工程师 = 250
 			法士 = 250
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_merchant_guilds_light_industry = {
@@ -2031,6 +2455,10 @@ pm_merchant_guilds_light_industry = {
 	}
 	type = building_aristocrats_shares_add
 	value = 2
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_church_owned_light_industry = {
 	unlocking_technologies = {
@@ -2049,6 +2477,10 @@ pm_church_owned_light_industry = {
 		level_scaled = {
 			教士 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_privately_owned_light_industry = {
@@ -2076,6 +2508,10 @@ pm_privately_owned_light_industry = {
 	}
 	type = building_aristocrats_shares_add
 	value = 1
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_publicly_traded_light_industry = {
 	unlocking_technologies = {
@@ -2100,6 +2536,10 @@ pm_publicly_traded_light_industry = {
 			building_capitalists_shares_add = 5
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_government_run_light_industry = {
 	unlocking_technologies = {
@@ -2118,6 +2558,10 @@ pm_government_run_light_industry = {
 		level_scaled = {
 			官僚 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_elementary_worker_cooperative_light_industry = {
@@ -2144,6 +2588,10 @@ pm_elementary_worker_cooperative_light_industry = {
 	}
 	type = building_machinists_shares_add
 	value = 2
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_advanced_worker_cooperative_light_industry = {
 	unlocking_technologies = {
@@ -2169,6 +2617,10 @@ pm_advanced_worker_cooperative_light_industry = {
 	}
 	type = building_magiciteain_shares_add
 	value = 2
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_mage_owned_light_industry = {
 	unlocking_technologies = {
@@ -2183,6 +2635,10 @@ pm_mage_owned_light_industry = {
 			建造 = 3
 			运力 = 6
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_bakery = {
@@ -2202,6 +2658,10 @@ pm_bakery = {
 	}
 	type = 精致食物
 	value = 140
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_sweeteners = {
 	unlocking_technologies = {
@@ -2223,6 +2683,10 @@ pm_sweeteners = {
 	}
 	type = 精致食物
 	value = 160
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_baking_powder = {
 	unlocking_technologies = {
@@ -2244,6 +2708,10 @@ pm_baking_powder = {
 	}
 	type = 精致食物
 	value = 200
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_disabled_canning = {
 	unlocking_technologies = {
@@ -2251,6 +2719,10 @@ pm_disabled_canning = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_cannery = {
@@ -2269,6 +2741,10 @@ pm_cannery = {
 			机工 = 200
 			工程师 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_vacuum_canning = {
@@ -2290,6 +2766,10 @@ pm_vacuum_canning = {
 			工程师 = 200
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_manual_dough_processing = {
 	unlocking_technologies = {
@@ -2297,6 +2777,10 @@ pm_manual_dough_processing = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_automated_bakery = {
@@ -2318,6 +2802,10 @@ pm_automated_bakery = {
 			工程师 = 100
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intelligent_doll_building_food_industry = {
 	unlocking_technologies = {
@@ -2336,6 +2824,10 @@ pm_intelligent_doll_building_food_industry = {
 			机工 = -1000
 			法士 = 50
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_automated_bakery = {
@@ -2361,6 +2853,10 @@ pm_doll_based_automated_bakery = {
 			法士 = 25
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_pot_stills = {
 	unlocking_technologies = {
@@ -2379,6 +2875,10 @@ pm_pot_stills = {
 	}
 	type = 烈酒
 	value = 135
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_patent_stills = {
 	unlocking_technologies = {
@@ -2399,6 +2899,10 @@ pm_patent_stills = {
 	}
 	type = 烈酒
 	value = 145
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_metal_bottle = {
 	unlocking_technologies = {
@@ -2414,6 +2918,10 @@ pm_metal_bottle = {
 	}
 	type = 烈酒
 	value = -5
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_glass_bottle = {
 	unlocking_technologies = {
@@ -2432,6 +2940,10 @@ pm_glass_bottle = {
 			工程师 = 150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_automation = {
 	unlocking_technologies = {
@@ -2439,6 +2951,10 @@ pm_no_automation = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_automated_distillery = {
@@ -2460,6 +2976,10 @@ pm_automated_distillery = {
 			机工 = 250
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intelligent_doll_building_liquor_industry = {
 	unlocking_technologies = {
@@ -2478,6 +2998,10 @@ pm_intelligent_doll_building_liquor_industry = {
 			劳工 = -1800
 			法士 = 150
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_automated_distillery = {
@@ -2502,6 +3026,10 @@ pm_doll_based_automated_distillery = {
 			法士 = 150
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_handsewn_clothes = {
 	unlocking_technologies = {
@@ -2520,6 +3048,10 @@ pm_handsewn_clothes = {
 	}
 	type = 普通衣物
 	value = 100
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_dye_workshops = {
 	unlocking_technologies = {
@@ -2539,6 +3071,10 @@ pm_dye_workshops = {
 	}
 	type = 普通衣物
 	value = 150
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_luxury_clothes = {
 	unlocking_technologies = {
@@ -2546,6 +3082,10 @@ pm_no_luxury_clothes = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_craftsman_sewing = {
@@ -2565,6 +3105,10 @@ pm_craftsman_sewing = {
 	}
 	type = 普通衣物
 	value = -30
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_elastics = {
 	unlocking_technologies = {
@@ -2584,6 +3128,10 @@ pm_elastics = {
 	}
 	type = 普通衣物
 	value = -50
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_traditional_looms = {
 	unlocking_technologies = {
@@ -2591,6 +3139,10 @@ pm_traditional_looms = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_sewing_machines = {
@@ -2609,6 +3161,10 @@ pm_sewing_machines = {
 			机工 = 400
 			工程师 = 100
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_automatic_sewing_machines = {
@@ -2629,6 +3185,10 @@ pm_automatic_sewing_machines = {
 			工程师 = 300
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magic_automation = {
 	unlocking_technologies = {
@@ -2636,6 +3196,10 @@ pm_no_magic_automation = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_base_doll_building_textile_mills = {
@@ -2656,6 +3220,10 @@ pm_base_doll_building_textile_mills = {
 			法士 = 200
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_intellectual_dolll_building_textile_mills = {
 	unlocking_technologies = {
@@ -2675,6 +3243,10 @@ pm_intellectual_dolll_building_textile_mills = {
 			法士 = 300
 		}
 	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
+	}
 }
 pm_no_magiscientia_automation = {
 	unlocking_technologies = {
@@ -2682,6 +3254,10 @@ pm_no_magiscientia_automation = {
 	unlocking_production_methods = {
 	}
 	disallowing_laws = {
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
 pm_doll_based_assemble_line_building_textile_mills = {
@@ -2706,5 +3282,9 @@ pm_doll_based_assemble_line_building_textile_mills = {
 			工程师 = -150
 			法士 = -150
 		}
+	}
+	timed_modifiers = {
+	}
+	unlocking_global_technologies = {
 	}
 }
