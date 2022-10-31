@@ -6,7 +6,7 @@ Tools that transfer excel to P for Vicotira3 ; 维多利亚3的转表工具
 
 该工具可用来将excel的配置转为V3所需的配置文件，点击excel\Transfer.bat即可将excel转为txt
 
-详细范本可见excel\【数值设定】生产方式.xlsx；具体表格规则也在里面
+详细范本可见excel\【数值表格】经济.xlsm；具体表格规则也在里面
 
 该工具基于python3.10、lua5.4、bat运行
 
