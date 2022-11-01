@@ -20,7 +20,7 @@ def GetCondition(_string):
     return 'normal'
 
 def AddString(_title,_content):
-    return '\t%s = %s\n'%(_title,_content)
+    return f'\t{_title} = {_content}\n'
 
 def IfNotSpace(title,content):
     #检测空行
@@ -115,7 +115,7 @@ def ConvertSheetToDict(df,sheetName):
                             break
                         #检查value以及空行
                         if title_1 == 'value' and IfNotSpace(title_1,content_1):
-                            hierachy.append('\t\t%s\n'%content_1)
+                            hierachy.append(f'\t\t{content_1}\n')
                         column += 1
                     column -= 1
                 #是否存在多维数组层级
@@ -198,7 +198,7 @@ def FourSpace(level):
 class Reader():
     
     def __init__(self,sheetName,stringDict,):
-        self.txt = '# sheet is %s\n'%sheetName
+        self.txt = f'# sheet is {sheetName}\n'
         self.stringDict = stringDict
         self.stringList = list(stringDict.keys())
 
@@ -212,40 +212,40 @@ class Reader():
     def ReadContentDictValue(self,level,key,value):
         level += 1
         #如果是字典
-        if (type(value)) == type(dict()):
+        if isinstance(value,dict):
             for _value in list(value.keys()):
                 #判断是不是字符串
-                if type(value[_value]) == type(dict()):
+                if isinstance(value[_value],dict):
                      #如果不是字符串，判断字典长度
                     if len(value[_value]) > 0:
                         #如果字典长度大于0，则递归
                         key1 = self.IfInStringDictionary(_value)
                         value1 = self.IfInStringDictionary(value[_value])
-                        self.txt += '%s%s = {\n'%(FourSpace(level),key1)
+                        self.txt += f'{FourSpace(level)}{key1} = {\n'
                         self.ReadContentDictValue(level,key1,value1)
-                        self.txt += '%s}\n'%(FourSpace(level))
-                elif type(value[_value]) == type([]):
+                        self.txt += f'{FourSpace(level)}}\n'
+                elif isinstance(value[_value],list):
                     #直接添加list的元素
-                    self.txt += '%s%s = {\n'%(FourSpace(level),_value)
+                    self.txt += f'{FourSpace(level)}{_value} = {\n'
                     for element in value[_value]:
                         element = self.IfInStringDictionary(element)
-                        self.txt += '%s%s'%(FourSpace(level-2),element)
-                    self.txt += '%s}\n'%(FourSpace(level))
-                elif type(value[_value]) == type(''):
+                        self.txt += f'{FourSpace(level-2)}{element}'
+                    self.txt += f'{FourSpace(level)}}\n'
+                elif isinstance(value[_value],str):
                    #是字符串，直接赋值
                     key1 = self.IfInStringDictionary(_value)
                     value1 = self.IfInStringDictionary(value[_value])
-                    self.txt += '%s%s = %s\n'%(FourSpace(level),key1,value1)
-        elif type(value) == type([]):
+                    self.txt += f'{FourSpace(level)}{key1} = {value1}\n'
+        elif isinstance(value,list):
             #直接添加list的元素
             for element in value:
                 element = self.IfInStringDictionary(element)
-                self.txt += '%s%s'%(FourSpace(level-2),element)
-        elif type(value) == type(''):
+                self.txt += f'{FourSpace(level-2)}{element}'
+        elif isinstance(value,str):
             #直接添加字符串
             key = self.IfInStringDictionary(key)
             value = self.IfInStringDictionary(value)
-            self.txt += '%s%s = %s\n'%(FourSpace(level),key,value)
+            self.txt += f'{FourSpace(level)}{key} = {value}\n'
         return key,value
 
 if __name__ == '__main__':
@@ -271,8 +271,8 @@ if __name__ == '__main__':
     txtPath = rootPath + 'txt\\'
     #提示各种目录
     print('========目录========')
-    print('当前excel目录：%s'%excelPath)
-    print('当前的txt目录：%s'%txtPath)
+    print(f'当前excel目录：{excelPath}')
+    print(f'当前的txt目录：{txtPath}')
     print('========进度========')
     #获得excel路径下所有文件
     stream = os.listdir(excelPath) 
@@ -310,18 +310,18 @@ if __name__ == '__main__':
     #处理所有符合条件的excel文件
     for file in fileList:
         #打印处理excel的信息
-        print('处理excel：%s'%file ) 
+        print(f'处理excel：{file}' ) 
         #获取sheet
-        _sheetList = list(pd.read_excel('%s\\%s'%(excelPath,file),sheet_name=None).keys()) 
+        _sheetList = list(pd.read_excel(f'{excelPath}\\{file}',sheet_name=None).keys()) 
         #声明sheetList
         sheetList = list() 
         #sheetList赋值
         for i in range(len(_sheetList)): 
             if _sheetList[i] == 'string_dictionary':
                 #打印处理sheet的信息
-                print('--处理sheet：%s.txt'%_sheetList[i]) 
+                print(f'--处理sheet：{_sheetList[i]}.txt'%) 
                 #初始化DataFrame
-                df = pd.DataFrame(pd.read_excel('%s\\%s'%(excelPath,file),sheet_name=_sheetList[i],header=None))
+                df = pd.DataFrame(pd.read_excel(f'{excelPath}\\{file}',sheet_name=_sheetList[i],header=None))
                 #转stringDict表
                 stringDict = GetStringDictionary(df)
                 #print(stringDict)
@@ -331,16 +331,16 @@ if __name__ == '__main__':
         #遍历每个sheet
         for sheet in sheetList:
             #打印处理sheet的信息
-            print('--处理sheet：%s.txt'%sheet) 
+            print(f'--处理sheet：{sheet}.txt') 
             #初始化DataFrame
-            df = pd.DataFrame(pd.read_excel('%s\\%s'%(excelPath,file),sheet_name=sheet,header=None))
+            df = pd.DataFrame(pd.read_excel(f'{excelPath}\\{file}',sheet_name=sheet,header=None))
             #处理sheet
             contentDict = ConvertSheetToDict(df,sheet)
             #
             reader = Reader(sheet,stringDict)
             reader.ReadContentDictValue(-1,'',contentDict)
             #写入文件
-            with open( '%s%s.txt'%(txtPath,sheet),'w', encoding='utf-8') as f:
+            with open( f'{txtPath}{sheet}.txt','w', encoding='utf-8') as f:
                 f.write(reader.txt)
             """
             if sheet in specialSheet:
