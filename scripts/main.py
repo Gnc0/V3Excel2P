@@ -221,16 +221,16 @@ class Reader():
                         #如果字典长度大于0，则递归
                         key1 = self.IfInStringDictionary(_value)
                         value1 = self.IfInStringDictionary(value[_value])
-                        self.txt += f'{FourSpace(level)}{key1} = {\n'
+                        self.txt += f'{FourSpace(level)}{key1} = ' + "{\n"
                         self.ReadContentDictValue(level,key1,value1)
-                        self.txt += f'{FourSpace(level)}}\n'
+                        self.txt += f'{FourSpace(level)}' + "}\n"
                 elif isinstance(value[_value],list):
                     #直接添加list的元素
-                    self.txt += f'{FourSpace(level)}{_value} = {\n'
+                    self.txt += f'{FourSpace(level)}{_value} = ' + "{\n"
                     for element in value[_value]:
                         element = self.IfInStringDictionary(element)
                         self.txt += f'{FourSpace(level-2)}{element}'
-                    self.txt += f'{FourSpace(level)}}\n'
+                    self.txt += f'{FourSpace(level)}' + "}\n"
                 elif isinstance(value[_value],str):
                    #是字符串，直接赋值
                     key1 = self.IfInStringDictionary(_value)
@@ -300,6 +300,7 @@ if __name__ == '__main__':
         if file[:2] == '~$':
             ifAppendFile = False
             print('警告：检测到可能有正在打开的excel文件，这可能导致转表失败，请查验\n')
+        # 跳过忽略的excel文件
         if file[:1] == '!':
             ifAppendFile = False
             print('跳过 ! 开头的文件：'+str(file)+'\n')
@@ -319,7 +320,7 @@ if __name__ == '__main__':
         for i in range(len(_sheetList)): 
             if _sheetList[i] == 'string_dictionary':
                 #打印处理sheet的信息
-                print(f'--处理sheet：{_sheetList[i]}.txt'%) 
+                print(f'--处理sheet：{_sheetList[i]}.txt') 
                 #初始化DataFrame
                 df = pd.DataFrame(pd.read_excel(f'{excelPath}\\{file}',sheet_name=_sheetList[i],header=None))
                 #转stringDict表
