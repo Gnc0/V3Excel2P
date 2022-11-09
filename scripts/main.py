@@ -76,8 +76,8 @@ def ConvertSheetToDict(df,sheetName):
                 if arrayDepth == 2:
                     #开头
                     hierachy = dict()
-                    #
                     column += 1
+                    # 遍历
                     for pos in range(arrayLength):
                         #确保column不会溢出
                         if column >= columnMax:
@@ -115,6 +115,7 @@ def ConvertSheetToDict(df,sheetName):
                             break
                         #检查value以及空行
                         if title_1 == 'value' and IfNotSpace(title_1,content_1):
+                            content_1
                             hierachy.append(f'\t\t{content_1}\n')
                         column += 1
                     column -= 1
@@ -131,6 +132,7 @@ def ConvertSheetToDict(df,sheetName):
                         contentDict[index][arrayName] = hierachy
                     if arrayDepth == 1:
                         contentDict[index][arrayName] = hierachy
+            # 如果是数组
             if condition == 'array':
                 None
             #如果没有特殊处理而且不是空行
@@ -214,9 +216,9 @@ class Reader():
         #如果是字典
         if isinstance(value,dict):
             for _value in list(value.keys()):
-                #判断是不是字符串
+                #判断是不是字典
                 if isinstance(value[_value],dict):
-                     #如果不是字符串，判断字典长度
+                    #如果是字典，判断长度
                     if len(value[_value]) > 0:
                         #如果字典长度大于0，则递归
                         key1 = self.IfInStringDictionary(_value)
@@ -228,11 +230,14 @@ class Reader():
                     #直接添加list的元素
                     self.txt += f'{FourSpace(level)}{_value} = ' + "{\n"
                     for element in value[_value]:
+                        # 实际运行中发现会有2个\t和1个\n
+                        element = element.replace('\t','')
+                        element = element.replace('\n','')
                         element = self.IfInStringDictionary(element)
-                        self.txt += f'{FourSpace(level-2)}{element}'
+                        self.txt += f'{FourSpace(level+1)}{element}'+"\n"
                     self.txt += f'{FourSpace(level)}' + "}\n"
                 elif isinstance(value[_value],str):
-                   #是字符串，直接赋值
+                    #是字符串，直接赋值
                     key1 = self.IfInStringDictionary(_value)
                     value1 = self.IfInStringDictionary(value[_value])
                     self.txt += f'{FourSpace(level)}{key1} = {value1}\n'
@@ -268,7 +273,7 @@ if __name__ == '__main__':
     #获得excel的路径
     excelPath = rootPath + 'excel\\'
     #获得txt的路径
-    txtPath = rootPath + 'txt\\'
+    txtPath = rootPath + 'excel\\txt\\'
     #提示各种目录
     print('========目录========')
     print(f'当前excel目录：{excelPath}')
