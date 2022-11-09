@@ -429,7 +429,7 @@ pm_watertube_boiler_building_steel_mills = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_钢铁_泡钢法
+		pm_blister_steel_process
 	}
 	disallowing_laws = {
 	}
@@ -454,7 +454,7 @@ pm_rotary_valve_engine_building_steel_mills = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_钢铁_贝塞麦转炉炼钢法
+		pm_bessemer_process
 	}
 	disallowing_laws = {
 	}
@@ -491,7 +491,7 @@ pm_base_doll_building_steel_mill = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_钢铁_冲击分离法
+		pm_magic_impact_process
 	}
 	disallowing_laws = {
 		law_authority_only
@@ -519,7 +519,7 @@ pm_intellectual_doll_building_steel_mill = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_钢铁_漂浮分离法
+		pm_magic_floating_process
 	}
 	disallowing_laws = {
 		law_authority_only
@@ -547,7 +547,7 @@ pm_super_doll_building_steel_mill = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_钢铁_魔能丝线分离法
+		pm_magic_thread_seperation_process
 	}
 	disallowing_laws = {
 		law_authority_only
@@ -587,8 +587,8 @@ pm_doll_based_assemble_line_building_steel_mill = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_钢铁_旋转阀蒸汽机
-		pm_钢铁_强智能魔偶
+		pm_rotary_valve_engine_building_steel_mills
+		pm_super_doll_building_steel_mill
 	}
 	disallowing_laws = {
 		law_prohibition_magiscientia
@@ -704,7 +704,7 @@ pm_watertube_boiler_building_motor_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_科动_往复式蒸汽机
+		pm_reciprocating_engines
 	}
 	disallowing_laws = {
 	}
@@ -728,7 +728,7 @@ pm_rotary_valve_engine_motor_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_科动_旋转阀蒸汽机
+		pm_rotary_valve_engines
 	}
 	disallowing_laws = {
 	}
@@ -752,7 +752,7 @@ pm_assembly_lines_motor_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_科动_旋转阀蒸汽机
+		pm_rotary_valve_engines
 	}
 	disallowing_laws = {
 	}
@@ -777,7 +777,7 @@ pm_doll_based_assemble_line_motor_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_科动_通用化蒸汽核心
+		pm_universal_steam_core
 	}
 	disallowing_laws = {
 		law_prohibition_magiscientia
@@ -971,7 +971,7 @@ pm_doll_based_assemble_line_building_doll_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔偶_超智能魔偶生产
+		pm_strong_intelligent_magical_dolls
 	}
 	disallowing_laws = {
 		law_prohibition_magiscientia
@@ -1345,8 +1345,8 @@ pm_base_doll_building_magical_small_arms_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔武_制式法铳
-		pm_魔武_复式法铳
+		pm_standard_magic_rifle
+		pm_compound_magic_rifle
 	}
 	disallowing_laws = {
 	}
@@ -1370,8 +1370,8 @@ pm_intellectual_doll_building_magical_small_arms_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔武_制式法铳
-		pm_魔武_复式法铳
+		pm_standard_magic_rifle
+		pm_compound_magic_rifle
 	}
 	disallowing_laws = {
 	}
@@ -1395,8 +1395,8 @@ pm_super_doll_building_magical_small_arms_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔武_制式法铳
-		pm_魔武_复式法铳
+		pm_standard_magic_rifle
+		pm_compound_magic_rifle
 	}
 	disallowing_laws = {
 	}
@@ -1420,7 +1420,7 @@ pm_doll_based_assemble_line_building_magical_small_arms_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔武_复式法铳
+		pm_compound_magic_rifle
 	}
 	disallowing_laws = {
 	}
@@ -1843,8 +1843,8 @@ pm_assembly_lines_building_war_machine_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_科军_蒸汽飞机生产
-		pm_科军_蒸汽机甲
+		pm_aeroplane_production
+		pm_steam_mech_production
 	}
 	disallowing_laws = {
 	}
@@ -1869,8 +1869,8 @@ pm_doll_based_assemble_line_building_war_machine_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔军_魔导机甲
-		pm_科军_空天母舰生产
+		pm_magiscientia_mech_production
+		pm_helicarrier
 	}
 	disallowing_laws = {
 		law_authority_only
@@ -2106,8 +2106,8 @@ pm_doll_based_assemble_line_building_magic_war_machine_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_魔军_浮空城生产
-		pm_魔军_魔导机甲
+		pm_magical_floating_city_production
+		pm_magiscientia_mech_production
 	}
 	disallowing_laws = {
 	}
@@ -2406,8 +2406,8 @@ pm_doll_based_assemble_line_building_arms_industry = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_科武_后膛炮
-		pm_科武_栓动步枪
+		pm_breech_loaders
+		pm_bolt_action_rifles
 	}
 	disallowing_laws = {
 	}
@@ -2787,7 +2787,7 @@ pm_automated_bakery = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_食品_烘焙粉
+		pm_baking_powder
 	}
 	disallowing_laws = {
 	}
@@ -2834,8 +2834,8 @@ pm_doll_based_automated_bakery = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_食品_烘焙粉
-		pm_食品_真空罐装
+		pm_baking_powder
+		pm_vacuum_canning
 	}
 	disallowing_laws = {
 	}
@@ -3008,7 +3008,7 @@ pm_doll_based_automated_distillery = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_酿酒_连续式蒸馏器
+		pm_patent_stills
 	}
 	disallowing_laws = {
 	}
@@ -3264,8 +3264,8 @@ pm_doll_based_assemble_line_building_textile_mills = {
 	unlocking_technologies = {
 	}
 	unlocking_production_methods = {
-		pm_纺织_自动缝纫机
-		pm_纺织_智能魔偶
+		pm_automatic_sewing_machines
+		pm_intellectual_dolll_building_textile_mills
 	}
 	disallowing_laws = {
 	}

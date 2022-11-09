@@ -1,0 +1,311 @@
+# sheet is production_methods_groups
+pmg_magical_dolls_industry_methods_building_steel_mills = {
+	production_methods_groups = {
+		pm_basic_magical_dolls
+		pm_intellectual_doll_building_steel_mill
+		pm_strong_intelligent_magical_dolls
+	}
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}
+pmg_science_building_steel_mills = {
+	production_methods_groups = {
+		pm_no_science_base
+		pm_blast_furnace_building
+		pm_blister_steel_process
+		pm_bessemer_process
+		pm_open_hearth_process
+	}
+}
+pmg_ownership_capital_heavy_industry = {
+	production_methods_groups = {
+		pm_merchant_guilds_heavy_industry
+		pm_church_owned_heavy_industry
+		pm_privately_owned_heavy_industry
+		pm_publicly_traded_heavy_industry
+		pm_government_run_heavy_industry
+		pm_elementary_worker_cooperative_heavy_industry
+		pm_advanced_worker_cooperative_heavy_industry
+		pm_mage_owned_heavy_industry
+	}
+}
+pmg_magic_building_steel_mills = {
+	production_methods_groups = {
+		no_magic_base_production
+		pm_magic_impact_process
+		pm_magic_floating_process
+		pm_magic_thread_seperation_process
+	}
+}
+pmg_science_automation_building_steel_mills = {
+	production_methods_groups = {
+		pm_no_science_automation
+		pm_watertube_boiler_building_steel_mills
+		pm_rotary_valve_engine_building_steel_mills
+	}
+}
+pmg_magical_automation_building_steel_mills = {
+	production_methods_groups = {
+		pm_no_magic_automation
+		pm_base_doll_building_steel_mill
+		pm_intellectual_doll_building_steel_mill
+		pm_super_doll_building_steel_mill
+	}
+}
+pmg_magiscientia_automation_building_steel_mills = {
+	production_methods_groups = {
+		pm_no_magiscientia_automation
+		pm_doll_based_assemble_line_building_steel_mill
+	}
+}
+pmg_base_building_motor_industry = {
+	production_methods_groups = {
+		pm_reciprocating_engines
+		pm_rotary_valve_engines
+		pm_universal_steam_core
+	}
+}
+pmg_automation_building_motor_industry = {
+	production_methods_groups = {
+		pm_science_automation_disabled
+		pm_watertube_boiler_building_motor_industry
+		pm_rotary_valve_engine_motor_industry
+		pm_assembly_lines_motor_industry
+		pm_doll_based_assemble_line_motor_industry
+	}
+}
+pmg_magical_dolls_industry_methods = {
+	production_methods_groups = {
+		pm_basic_magical_dolls
+		pm_intelligent_magical_dolls
+		pm_strong_intelligent_magical_dolls
+	}
+}
+pmg_automation_building_magical_doll_industry = {
+	production_methods_groups = {
+		pm_automation_disabled
+		pm_base_doll_building_doll_industry
+		pm_intellectual_doll_building_doll_industry
+		pm_super_doll_building_doll_industry
+		pm_doll_based_assemble_line_building_doll_industry
+	}
+}
+pmg_alchemy_method = {
+	production_methods_groups = {
+		pm_refinery
+		pm_masculine_and_feminine_metal_fusing
+		pm_element_teleportation
+	}
+}
+pmg_automation_building_alchemy_industry = {
+	production_methods_groups = {
+		pm_automation_disabled
+		pm_base_doll_building_alchemy_industry
+		pm_intellectual_doll_building_alchemy_industry
+		pm_super_doll_building_alchemy_industry
+		pm_doll_based_assemble_line_building_alchemy_industry
+	}
+}
+pmg_zro_extraction_method = {
+	production_methods_groups = {
+		pm_extract_ranch
+		pm_extract_from_body
+		pm_standard_wands
+	}
+}
+pmg_magical_small_arms_manufacturing = {
+	production_methods_groups = {
+		pm_standard_wands
+		pm_papa_made_magic_rifle
+		pm_standard_magic_rifle
+		pm_compound_magic_rifle
+	}
+}
+pmg_automation_building_magic_weapon_industry = {
+	production_methods_groups = {
+		pm_automation_disabled
+		pm_base_doll_building_magical_small_arms_industry
+		pm_intellectual_doll_building_magical_small_arms_industry
+		pm_super_doll_building_magical_small_arms_industry
+		pm_doll_based_assemble_line_building_magical_small_arms_industry
+	}
+}
+pmg_psionic_crystal_production = {
+	production_methods_groups = {
+		pm_psionic_strike_method
+		pm_psionic_assembling_method
+		pm_psionic_summoning_method
+	}
+}
+pmg_magical_floating_vehicle_production = {
+	production_methods_groups = {
+		pm_no_magical_floating_vehicle_production
+		pm_magical_floating_vehicle_production
+	}
+}
+pmg_automation_building_magical_equipment_industry = {
+	production_methods_groups = {
+		pm_automation_disabled
+		pm_base_doll_building_magical_equipment_industry
+		pm_intellectual_doll_building_magical_equipment_industry
+		pm_super_doll_building_magical_equipment_industry
+		pm_doll_based_assemble_line_building_magical_equipment_industry
+	}
+}
+pmg_aeroplanes = {
+	production_methods_groups = {
+		pm_no_aerocraft_production
+		pm_aeroplane_production
+		pm_helicarrier
+	}
+}
+pmg_science_mech_production = {
+	production_methods_groups = {
+		pm_no_mech_production
+		pm_steam_mech_production
+		pm_magiscientia_mech_production
+	}
+}
+pmg_automation_building_war_machine_industry = {
+	production_methods_groups = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_war_machine_industry
+		pm_rotary_valve_engine_building_war_machine_industry
+		pm_assembly_lines_building_war_machine_industry
+		pm_doll_based_assemble_line_building_war_machine_industry
+	}
+}
+pmg_magical_aerocraft = {
+	production_methods_groups = {
+		pm_no_aerocraft_production
+		pm_magical_floating_platform_production
+		pm_magical_floating_city_production
+	}
+}
+pmg_magical_mech_production = {
+	production_methods_groups = {
+		pm_no_mech_production
+		pm_magical_mech_production
+		pm_magiscientia_mech_production
+	}
+}
+pmg_automation_building_magic_war_machine_industry = {
+	production_methods_groups = {
+		pm_automation_disabled
+		pm_base_doll_building_magic_war_machine_industry
+		pm_intellectual_doll_building_magic_war_machine_industry
+		pm_super_doll_building_magic_war_machine_industry
+		pm_doll_based_assemble_line_building_magic_war_machine_industry
+	}
+}
+pmg_firearms_manufacturing = {
+	production_methods_groups = {
+		pm_muskets
+		pm_rifles
+		pm_repeaters
+		pm_bolt_action_rifles
+	}
+}
+pmg_foundries = {
+	production_methods_groups = {
+		pm_no_artillery_production
+		pm_cannons
+		pm_smoothbores
+		pm_breech_loaders
+	}
+}
+pmg_automation_building_arms_industry = {
+	production_methods_groups = {
+		pm_science_automation_disabled
+		pm_watertube_boiler_building_arms_industry
+		pm_rotary_valve_engine_building_arms_industry
+		pm_assembly_lines_building_arms_industry
+		pm_doll_based_assemble_line_building_arms_industry
+	}
+}
+pmg_ownership_capital_light_industry = {
+	production_methods_groups = {
+		pm_merchant_guilds_light_industry
+		pm_church_owned_light_industry
+		pm_privately_owned_light_industry
+		pm_publicly_traded_light_industry
+		pm_government_run_light_industry
+		pm_elementary_worker_cooperative_light_industry
+		pm_advanced_worker_cooperative_light_industry
+		pm_mage_owned_light_industry
+	}
+}
+pmg_base_building_food_industry = {
+	production_methods_groups = {
+		pm_bakery
+		pm_sweeteners
+		pm_baking_powder
+	}
+}
+pmg_canning = {
+	production_methods_groups = {
+		pm_disabled_canning
+		pm_cannery
+		pm_vacuum_canning
+	}
+}
+pmg_automation_building_food_industry = {
+	production_methods_groups = {
+		pm_manual_dough_processing
+		pm_automated_bakery
+		pm_intelligent_doll_building_food_industry
+		pm_doll_based_automated_bakery
+	}
+}
+pmg_distillery = {
+	production_methods_groups = {
+		pm_pot_stills
+		pm_patent_stills
+	}
+}
+pmg_bottle_material = {
+	production_methods_groups = {
+		pm_metal_bottle
+		pm_glass_bottle
+	}
+}
+pmg_automation_building_liquor_factory = {
+	production_methods_groups = {
+		pm_no_automation
+		pm_automated_distillery
+		pm_intelligent_doll_building_liquor_industry
+		pm_doll_based_automated_distillery
+	}
+}
+pmg_base_building_textile_mills = {
+	production_methods_groups = {
+		pm_handsewn_clothes
+		pm_dye_workshops
+	}
+}
+pmg_luxury_building_textile_mills = {
+	production_methods_groups = {
+		pm_no_luxury_clothes
+		pm_craftsman_sewing
+		pm_elastics
+	}
+}
+pmg_automation_building_textile_mills = {
+	production_methods_groups = {
+		pm_traditional_looms
+		pm_sewing_machines
+		pm_automatic_sewing_machines
+	}
+}
+pmg_magical_automation_building_textile_mills = {
+	production_methods_groups = {
+		pm_no_magic_automation
+		pm_base_doll_building_textile_mills
+		pm_intellectual_dolll_building_textile_mills
+	}
+}
+pmg_magiscientia_automation_building_textile_mills = {
+	production_methods_groups = {
+		pm_no_magiscientia_automation
+		pm_doll_based_assemble_line_building_textile_mills
+	}
+}
