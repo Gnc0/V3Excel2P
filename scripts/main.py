@@ -210,7 +210,7 @@ class Reader():
             return self.stringDict[s]
         return s
 
-
+    # 阅读sheet内容
     def ReadContentDictValue(self,level,key,value):
         level += 1
         #如果是字典
@@ -227,25 +227,29 @@ class Reader():
                         self.ReadContentDictValue(level,key1,value1)
                         self.txt += f'{FourSpace(level)}' + "}\n"
                 elif isinstance(value[_value],list):
-                    #直接添加list的元素
-                    self.txt += f'{FourSpace(level)}{_value} = ' + "{\n"
-                    for element in value[_value]:
-                        # 实际运行中发现会有2个\t和1个\n
-                        element = element.replace('\t','')
-                        element = element.replace('\n','')
-                        element = self.IfInStringDictionary(element)
-                        self.txt += f'{FourSpace(level+1)}{element}'+"\n"
-                    self.txt += f'{FourSpace(level)}' + "}\n"
+                    # 检测列表元素个数是否大于0
+                    if len(value[_value]) > 0:
+                        #直接添加list的元素
+                        self.txt += f'{FourSpace(level)}{_value} = ' + "{\n"
+                        for element in value[_value]:
+                            # 实际运行中发现会有2个\t和1个\n，需要去除
+                            element = element.replace('\t','')
+                            element = element.replace('\n','')
+                            element = self.IfInStringDictionary(element)
+                            self.txt += f'{FourSpace(level+1)}{element}'+"\n"
+                        self.txt += f'{FourSpace(level)}' + "}\n"
                 elif isinstance(value[_value],str):
                     #是字符串，直接赋值
                     key1 = self.IfInStringDictionary(_value)
                     value1 = self.IfInStringDictionary(value[_value])
                     self.txt += f'{FourSpace(level)}{key1} = {value1}\n'
         elif isinstance(value,list):
-            #直接添加list的元素
-            for element in value:
-                element = self.IfInStringDictionary(element)
-                self.txt += f'{FourSpace(level-2)}{element}'
+            # 检测列表元素个数是否大于0
+            if len(value[_value]) > 0:
+                #直接添加list的元素
+                for element in value:
+                    element = self.IfInStringDictionary(element)
+                    self.txt += f'{FourSpace(level-2)}{element}'
         elif isinstance(value,str):
             #直接添加字符串
             key = self.IfInStringDictionary(key)
