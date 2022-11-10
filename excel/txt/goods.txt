@@ -1,4 +1,4 @@
-# sheet is goods
+﻿# sheet is goods
 谷物 = {
 	category = staple
 	cost = 20

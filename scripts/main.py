@@ -192,10 +192,9 @@ def GetStringDictionary(df):
     return stringDict
     
 def FourSpace(level):
-    s = ''
     for i in range(level):
-        s += '\t'
-    return s
+        return '\t'
+    return ''
 
 class Reader():
     
@@ -349,8 +348,8 @@ if __name__ == '__main__':
             #
             reader = Reader(sheet,stringDict)
             reader.ReadContentDictValue(-1,'',contentDict)
-            #写入文件
-            with open( f'{txtPath}{sheet}.txt','w', encoding='utf-8') as f:
+            #写入文件，以utf-8 with BOM的方式
+            with open( f'{txtPath}{sheet}.txt','w', encoding='utf_8_sig') as f:
                 f.write(reader.txt)
             """
             if sheet in specialSheet:
