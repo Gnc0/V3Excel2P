@@ -1,5 +1,4 @@
-﻿# sheet is goods
-谷物 = {
+﻿谷物 = {
 	category = staple
 	cost = 20
 	texture = "gfx/interface/icons/goods_icons/grain.dds"

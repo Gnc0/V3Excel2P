@@ -1,0 +1,1376 @@
+﻿wealth_1 = {
+	political_strength = 0.03
+	goods = {
+		simple_clothing = 23
+		basic_food = 90
+		heating = 15
+		intoxicants = 23
+	}
+}
+wealth_2 = {
+	political_strength = 0.04
+	goods = {
+		simple_clothing = 26
+		basic_food = 99
+		heating = 17
+		intoxicants = 23
+	}
+}
+wealth_3 = {
+	political_strength = 0.05
+	goods = {
+		simple_clothing = 33
+		basic_food = 108
+		heating = 18
+		intoxicants = 23
+	}
+}
+wealth_4 = {
+	political_strength = 0.1
+	goods = {
+		simple_clothing = 36
+		basic_food = 121
+		heating = 20
+		intoxicants = 23
+	}
+}
+wealth_5 = {
+	political_strength = 0.15
+	goods = {
+		simple_clothing = 38
+		crude_items = 13
+		basic_food = 126
+		heating = 21
+		intoxicants = 23
+	}
+}
+wealth_6 = {
+	political_strength = 0.25
+	goods = {
+		simple_clothing = 43
+		crude_items = 19
+		basic_food = 132
+		heating = 24
+		intoxicants = 23
+	}
+}
+wealth_7 = {
+	political_strength = 0.35
+	goods = {
+		simple_clothing = 43
+		crude_items = 27
+		basic_food = 143
+		heating = 27
+		intoxicants = 23
+	}
+}
+wealth_8 = {
+	political_strength = 0.45
+	goods = {
+		simple_clothing = 43
+		crude_items = 41
+		basic_food = 150
+		heating = 31
+		intoxicants = 23
+	}
+}
+wealth_9 = {
+	political_strength = 0.6
+	goods = {
+		simple_clothing = 43
+		crude_items = 53
+		basic_food = 150
+		heating = 36
+		intoxicants = 23
+	}
+}
+wealth_10 = {
+	political_strength = 0.75
+	goods = {
+		simple_clothing = 51
+		crude_items = 45
+		basic_food = 154
+		standard_clothing = 10
+		household_items = 7
+		heating = 29
+		intoxicants = 34
+		services = 24
+	}
+}
+wealth_11 = {
+	political_strength = 0.9
+	goods = {
+		simple_clothing = 47
+		crude_items = 43
+		basic_food = 157
+		standard_clothing = 23
+		household_items = 20
+		heating = 29
+		intoxicants = 39
+		services = 31
+	}
+}
+wealth_12 = {
+	political_strength = 1.4
+	goods = {
+		simple_clothing = 37
+		crude_items = 37
+		basic_food = 164
+		standard_clothing = 37
+		household_items = 37
+		heating = 29
+		intoxicants = 46
+		services = 41
+	}
+}
+wealth_13 = {
+	political_strength = 1.9
+	goods = {
+		simple_clothing = 20
+		crude_items = 20
+		basic_food = 173
+		standard_clothing = 69
+		household_items = 59
+		heating = 29
+		intoxicants = 49
+		services = 49
+	}
+}
+wealth_14 = {
+	political_strength = 2.4
+	goods = {
+		simple_clothing = 11
+		crude_items = 11
+		basic_food = 183
+		standard_clothing = 89
+		household_items = 77
+		heating = 29
+		intoxicants = 55
+		services = 61
+	}
+}
+wealth_15 = {
+	political_strength = 4.6
+	goods = {
+		basic_food = 182
+		standard_clothing = 106
+		household_items = 89
+		heating = 29
+		intoxicants = 56
+		services = 67
+		luxury_drinks = 17
+		free_movement = 17
+		luxury_items = 11
+	}
+}
+wealth_16 = {
+	political_strength = 6.8
+	goods = {
+		basic_food = 182
+		standard_clothing = 110
+		household_items = 98
+		heating = 29
+		intoxicants = 61
+		services = 77
+		luxury_drinks = 24
+		free_movement = 24
+		luxury_items = 24
+	}
+}
+wealth_17 = {
+	political_strength = 9
+	goods = {
+		basic_food = 182
+		standard_clothing = 114
+		household_items = 107
+		heating = 29
+		intoxicants = 67
+		services = 88
+		luxury_drinks = 40
+		free_movement = 27
+		luxury_items = 40
+	}
+}
+wealth_18 = {
+	political_strength = 12
+	goods = {
+		basic_food = 182
+		standard_clothing = 117
+		household_items = 117
+		heating = 29
+		intoxicants = 73
+		services = 99
+		luxury_drinks = 59
+		free_movement = 29
+		luxury_items = 59
+	}
+}
+wealth_19 = {
+	political_strength = 15
+	goods = {
+		basic_food = 182
+		standard_clothing = 119
+		household_items = 127
+		heating = 29
+		intoxicants = 79
+		services = 111
+		luxury_drinks = 79
+		free_movement = 40
+		luxury_items = 79
+	}
+}
+wealth_20 = {
+	political_strength = 18
+	goods = {
+		basic_food = 182
+		standard_clothing = 127
+		household_items = 135
+		heating = 29
+		intoxicants = 85
+		services = 122
+		luxury_drinks = 85
+		free_movement = 42
+		communication = 17
+		luxury_food = 8
+		luxury_items = 102
+	}
+}
+wealth_21 = {
+	political_strength = 23
+	goods = {
+		basic_food = 182
+		standard_clothing = 140
+		household_items = 131
+		heating = 29
+		intoxicants = 94
+		services = 139
+		luxury_drinks = 94
+		free_movement = 47
+		communication = 19
+		luxury_food = 19
+		luxury_items = 131
+	}
+}
+wealth_22 = {
+	political_strength = 28
+	goods = {
+		basic_food = 182
+		standard_clothing = 145
+		household_items = 134
+		heating = 29
+		intoxicants = 103
+		services = 158
+		luxury_drinks = 103
+		free_movement = 52
+		communication = 21
+		luxury_food = 31
+		luxury_items = 165
+	}
+}
+wealth_23 = {
+	political_strength = 33
+	goods = {
+		basic_food = 182
+		standard_clothing = 147
+		household_items = 136
+		heating = 29
+		intoxicants = 113
+		services = 178
+		luxury_drinks = 124
+		free_movement = 56
+		communication = 23
+		luxury_food = 45
+		luxury_items = 203
+	}
+}
+wealth_24 = {
+	political_strength = 40
+	goods = {
+		basic_food = 182
+		standard_clothing = 146
+		household_items = 146
+		heating = 29
+		intoxicants = 122
+		services = 199
+		luxury_drinks = 134
+		free_movement = 73
+		communication = 24
+		luxury_food = 61
+		luxury_items = 244
+	}
+}
+wealth_25 = {
+	political_strength = 47
+	goods = {
+		basic_food = 181
+		standard_clothing = 161
+		household_items = 155
+		heating = 29
+		intoxicants = 129
+		services = 215
+		luxury_drinks = 155
+		free_movement = 90
+		communication = 26
+		luxury_food = 77
+		luxury_items = 284
+	}
+}
+wealth_26 = {
+	political_strength = 52
+	goods = {
+		basic_food = 170
+		standard_clothing = 161
+		household_items = 170
+		heating = 29
+		intoxicants = 141
+		services = 243
+		luxury_drinks = 170
+		free_movement = 113
+		communication = 28
+		luxury_food = 85
+		luxury_items = 339
+	}
+}
+wealth_27 = {
+	political_strength = 60
+	goods = {
+		basic_food = 154
+		standard_clothing = 161
+		household_items = 185
+		heating = 29
+		intoxicants = 154
+		services = 271
+		luxury_drinks = 185
+		free_movement = 138
+		communication = 31
+		luxury_food = 108
+		luxury_items = 400
+	}
+}
+wealth_28 = {
+	political_strength = 68
+	goods = {
+		basic_food = 132
+		standard_clothing = 161
+		household_items = 199
+		heating = 29
+		intoxicants = 166
+		services = 300
+		luxury_drinks = 199
+		free_movement = 166
+		communication = 33
+		luxury_food = 149
+		luxury_items = 464
+	}
+}
+wealth_29 = {
+	political_strength = 76
+	goods = {
+		basic_food = 107
+		standard_clothing = 161
+		household_items = 215
+		heating = 29
+		intoxicants = 179
+		services = 324
+		luxury_drinks = 233
+		free_movement = 179
+		communication = 36
+		luxury_food = 197
+		luxury_items = 537
+	}
+}
+wealth_30 = {
+	political_strength = 88
+	goods = {
+		standard_clothing = 161
+		household_items = 207
+		heating = 29
+		intoxicants = 216
+		services = 374
+		luxury_drinks = 269
+		free_movement = 207
+		communication = 62
+		luxury_food = 269
+		luxury_items = 640
+	}
+}
+wealth_31 = {
+	political_strength = 110
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 406
+		luxury_drinks = 314
+		free_movement = 224
+		communication = 90
+		luxury_food = 314
+		luxury_items = 718
+	}
+}
+wealth_32 = {
+	political_strength = 120
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 447
+		luxury_drinks = 346
+		free_movement = 247
+		communication = 124
+		luxury_food = 346
+		luxury_items = 816
+	}
+}
+wealth_33 = {
+	political_strength = 130
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 497
+		luxury_drinks = 384
+		free_movement = 274
+		communication = 137
+		luxury_food = 384
+		luxury_items = 933
+	}
+}
+wealth_34 = {
+	political_strength = 145
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 550
+		luxury_drinks = 426
+		free_movement = 304
+		communication = 152
+		luxury_food = 426
+		luxury_items = 1064
+	}
+}
+wealth_35 = {
+	political_strength = 160
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 614
+		luxury_drinks = 441
+		free_movement = 339
+		communication = 204
+		luxury_food = 475
+		luxury_items = 1188
+	}
+}
+wealth_36 = {
+	political_strength = 175
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 679
+		luxury_drinks = 488
+		free_movement = 375
+		communication = 225
+		luxury_food = 563
+		luxury_items = 1313
+	}
+}
+wealth_37 = {
+	political_strength = 190
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 756
+		luxury_drinks = 543
+		free_movement = 418
+		communication = 251
+		luxury_food = 627
+		luxury_items = 1462
+	}
+}
+wealth_38 = {
+	political_strength = 205
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 841
+		luxury_drinks = 604
+		free_movement = 465
+		communication = 279
+		luxury_food = 697
+		luxury_items = 1627
+	}
+}
+wealth_39 = {
+	political_strength = 225
+	goods = {
+		standard_clothing = 161
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 927
+		luxury_drinks = 666
+		free_movement = 512
+		communication = 358
+		luxury_food = 768
+		luxury_items = 1792
+	}
+}
+wealth_40 = {
+	political_strength = 245
+	goods = {
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 964
+		luxury_drinks = 681
+		free_movement = 567
+		communication = 454
+		luxury_food = 851
+		luxury_items = 2098
+		art = 113
+	}
+}
+wealth_41 = {
+	political_strength = 265
+	goods = {
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 995
+		luxury_drinks = 747
+		free_movement = 622
+		communication = 560
+		luxury_food = 871
+		luxury_items = 2364
+		art = 187
+	}
+}
+wealth_42 = {
+	political_strength = 285
+	goods = {
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 1023
+		luxury_drinks = 819
+		free_movement = 682
+		communication = 682
+		luxury_food = 887
+		luxury_items = 2660
+		art = 273
+	}
+}
+wealth_43 = {
+	political_strength = 305
+	goods = {
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 1111
+		luxury_drinks = 889
+		free_movement = 741
+		communication = 741
+		luxury_food = 963
+		luxury_items = 2963
+		art = 370
+	}
+}
+wealth_44 = {
+	political_strength = 325
+	goods = {
+		household_items = 238
+		heating = 29
+		intoxicants = 216
+		services = 1228
+		luxury_drinks = 983
+		free_movement = 819
+		communication = 819
+		luxury_food = 1065
+		luxury_items = 3275
+		art = 409
+	}
+}
+wealth_45 = {
+	political_strength = 350
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 1400
+		luxury_drinks = 1027
+		free_movement = 934
+		communication = 934
+		luxury_food = 1214
+		luxury_items = 3734
+		art = 467
+	}
+}
+wealth_46 = {
+	political_strength = 375
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 1544
+		luxury_drinks = 1132
+		free_movement = 1029
+		communication = 1029
+		luxury_food = 1338
+		luxury_items = 4116
+		art = 515
+	}
+}
+wealth_47 = {
+	political_strength = 400
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 1701
+		luxury_drinks = 1248
+		free_movement = 1134
+		communication = 1134
+		luxury_food = 1474
+		luxury_items = 4537
+		art = 567
+	}
+}
+wealth_48 = {
+	political_strength = 425
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 1875
+		luxury_drinks = 1375
+		free_movement = 1250
+		communication = 1250
+		luxury_food = 1625
+		luxury_items = 4999
+		art = 625
+	}
+}
+wealth_49 = {
+	political_strength = 450
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 2046
+		luxury_drinks = 1500
+		free_movement = 1364
+		communication = 1364
+		luxury_food = 1773
+		luxury_items = 5456
+		art = 818
+	}
+}
+wealth_50 = {
+	political_strength = 475
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 2254
+		luxury_drinks = 1503
+		free_movement = 1503
+		communication = 1503
+		luxury_food = 1953
+		luxury_items = 6011
+		art = 1052
+	}
+}
+wealth_51 = {
+	political_strength = 500
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 2459
+		luxury_drinks = 1640
+		free_movement = 1640
+		communication = 1640
+		luxury_food = 1968
+		luxury_items = 6559
+		art = 1476
+	}
+}
+wealth_52 = {
+	political_strength = 525
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 2659
+		luxury_drinks = 1773
+		free_movement = 1773
+		communication = 1773
+		luxury_food = 2127
+		luxury_items = 7091
+		art = 1950
+	}
+}
+wealth_53 = {
+	political_strength = 550
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 2875
+		luxury_drinks = 1917
+		free_movement = 1917
+		communication = 1917
+		luxury_food = 2300
+		luxury_items = 7668
+		art = 2492
+	}
+}
+wealth_54 = {
+	political_strength = 575
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 3110
+		luxury_drinks = 2073
+		free_movement = 2073
+		communication = 2073
+		luxury_food = 2488
+		luxury_items = 8293
+		art = 3110
+	}
+}
+wealth_55 = {
+	political_strength = 600
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 3394
+		luxury_drinks = 2262
+		free_movement = 2262
+		communication = 2262
+		luxury_food = 2489
+		luxury_items = 9050
+		art = 3846
+	}
+}
+wealth_56 = {
+	political_strength = 620
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 3671
+		luxury_drinks = 2448
+		free_movement = 2448
+		communication = 2448
+		luxury_food = 2692
+		luxury_items = 9790
+		art = 4650
+	}
+}
+wealth_57 = {
+	political_strength = 640
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 3973
+		luxury_drinks = 2648
+		free_movement = 2648
+		communication = 2648
+		luxury_food = 2913
+		luxury_items = 10594
+		art = 5562
+	}
+}
+wealth_58 = {
+	political_strength = 660
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 4300
+		luxury_drinks = 2866
+		free_movement = 2866
+		communication = 2866
+		luxury_food = 3153
+		luxury_items = 11465
+		art = 6593
+	}
+}
+wealth_59 = {
+	political_strength = 680
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 4654
+		luxury_drinks = 3103
+		free_movement = 3103
+		communication = 3103
+		luxury_food = 3413
+		luxury_items = 12411
+		art = 7757
+	}
+}
+wealth_60 = {
+	political_strength = 700
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 5080
+		luxury_drinks = 3387
+		free_movement = 3387
+		communication = 3387
+		luxury_food = 3387
+		luxury_items = 13548
+		art = 9145
+	}
+}
+wealth_61 = {
+	political_strength = 720
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 5457
+		luxury_drinks = 3638
+		free_movement = 3638
+		communication = 3638
+		luxury_food = 3638
+		luxury_items = 14553
+		art = 10914
+	}
+}
+wealth_62 = {
+	political_strength = 740
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 5958
+		luxury_drinks = 3972
+		free_movement = 3972
+		communication = 3972
+		luxury_food = 3972
+		luxury_items = 15887
+		art = 12313
+	}
+}
+wealth_63 = {
+	political_strength = 760
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 6504
+		luxury_drinks = 4336
+		free_movement = 4336
+		communication = 4336
+		luxury_food = 4336
+		luxury_items = 17345
+		art = 13876
+	}
+}
+wealth_64 = {
+	political_strength = 780
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 7101
+		luxury_drinks = 4734
+		free_movement = 4734
+		communication = 4734
+		luxury_food = 4734
+		luxury_items = 18937
+		art = 15623
+	}
+}
+wealth_65 = {
+	political_strength = 800
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 7753
+		luxury_drinks = 5169
+		free_movement = 5169
+		communication = 5169
+		luxury_food = 5169
+		luxury_items = 20676
+		art = 17574
+	}
+}
+wealth_66 = {
+	political_strength = 820
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 8465
+		luxury_drinks = 5644
+		free_movement = 5644
+		communication = 5644
+		luxury_food = 5644
+		luxury_items = 22575
+		art = 19753
+	}
+}
+wealth_67 = {
+	political_strength = 840
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 9243
+		luxury_drinks = 6162
+		free_movement = 6162
+		communication = 6162
+		luxury_food = 6162
+		luxury_items = 24649
+		art = 22184
+	}
+}
+wealth_68 = {
+	political_strength = 860
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 10093
+		luxury_drinks = 6729
+		free_movement = 6729
+		communication = 6729
+		luxury_food = 6729
+		luxury_items = 26914
+		art = 24896
+	}
+}
+wealth_69 = {
+	political_strength = 880
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 11021
+		luxury_drinks = 7347
+		free_movement = 7347
+		communication = 7347
+		luxury_food = 7347
+		luxury_items = 29389
+		art = 27920
+	}
+}
+wealth_70 = {
+	political_strength = 900
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 11946
+		luxury_drinks = 7964
+		free_movement = 7964
+		communication = 7964
+		luxury_food = 7964
+		luxury_items = 31855
+		art = 31855
+	}
+}
+wealth_71 = {
+	political_strength = 920
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 13142
+		luxury_drinks = 8762
+		free_movement = 8762
+		communication = 8762
+		luxury_food = 8762
+		luxury_items = 35046
+		art = 35046
+	}
+}
+wealth_72 = {
+	political_strength = 940
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 14459
+		luxury_drinks = 9639
+		free_movement = 9639
+		communication = 9639
+		luxury_food = 9639
+		luxury_items = 38556
+		art = 38556
+	}
+}
+wealth_73 = {
+	political_strength = 960
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 15906
+		luxury_drinks = 10604
+		free_movement = 10604
+		communication = 10604
+		luxury_food = 10604
+		luxury_items = 42417
+		art = 42417
+	}
+}
+wealth_74 = {
+	political_strength = 980
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 17499
+		luxury_drinks = 11666
+		free_movement = 11666
+		communication = 11666
+		luxury_food = 11666
+		luxury_items = 46664
+		art = 46664
+	}
+}
+wealth_75 = {
+	political_strength = 1000
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 19251
+		luxury_drinks = 12834
+		free_movement = 12834
+		communication = 12834
+		luxury_food = 12834
+		luxury_items = 51336
+		art = 51336
+	}
+}
+wealth_76 = {
+	political_strength = 1020
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 21178
+		luxury_drinks = 14119
+		free_movement = 14119
+		communication = 14119
+		luxury_food = 14119
+		luxury_items = 56475
+		art = 56475
+	}
+}
+wealth_77 = {
+	political_strength = 1040
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 23298
+		luxury_drinks = 15532
+		free_movement = 15532
+		communication = 15532
+		luxury_food = 15532
+		luxury_items = 62128
+		art = 62128
+	}
+}
+wealth_78 = {
+	political_strength = 1060
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 25630
+		luxury_drinks = 17086
+		free_movement = 17086
+		communication = 17086
+		luxury_food = 17086
+		luxury_items = 68346
+		art = 68346
+	}
+}
+wealth_79 = {
+	political_strength = 1080
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 28195
+		luxury_drinks = 18796
+		free_movement = 18796
+		communication = 18796
+		luxury_food = 18796
+		luxury_items = 75186
+		art = 75186
+	}
+}
+wealth_80 = {
+	political_strength = 1100
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 31016
+		luxury_drinks = 20677
+		free_movement = 20677
+		communication = 20677
+		luxury_food = 20677
+		luxury_items = 82710
+		art = 82710
+	}
+}
+wealth_81 = {
+	political_strength = 1120
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 34120
+		luxury_drinks = 22747
+		free_movement = 22747
+		communication = 22747
+		luxury_food = 22747
+		luxury_items = 90986
+		art = 90986
+	}
+}
+wealth_82 = {
+	political_strength = 1140
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 37534
+		luxury_drinks = 25023
+		free_movement = 25023
+		communication = 25023
+		luxury_food = 25023
+		luxury_items = 100090
+		art = 100090
+	}
+}
+wealth_83 = {
+	political_strength = 1160
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 41289
+		luxury_drinks = 27526
+		free_movement = 27526
+		communication = 27526
+		luxury_food = 27526
+		luxury_items = 110105
+		art = 110105
+	}
+}
+wealth_84 = {
+	political_strength = 1180
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 45420
+		luxury_drinks = 30280
+		free_movement = 30280
+		communication = 30280
+		luxury_food = 30280
+		luxury_items = 121120
+		art = 121120
+	}
+}
+wealth_85 = {
+	political_strength = 1200
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 49964
+		luxury_drinks = 33309
+		free_movement = 33309
+		communication = 33309
+		luxury_food = 33309
+		luxury_items = 133238
+		art = 133238
+	}
+}
+wealth_86 = {
+	political_strength = 1220
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 54963
+		luxury_drinks = 36642
+		free_movement = 36642
+		communication = 36642
+		luxury_food = 36642
+		luxury_items = 146567
+		art = 146567
+	}
+}
+wealth_87 = {
+	political_strength = 1240
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 60461
+		luxury_drinks = 40307
+		free_movement = 40307
+		communication = 40307
+		luxury_food = 40307
+		luxury_items = 161229
+		art = 161229
+	}
+}
+wealth_88 = {
+	political_strength = 1260
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 66509
+		luxury_drinks = 44339
+		free_movement = 44339
+		communication = 44339
+		luxury_food = 44339
+		luxury_items = 177357
+		art = 177357
+	}
+}
+wealth_89 = {
+	political_strength = 1280
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 73162
+		luxury_drinks = 48775
+		free_movement = 48775
+		communication = 48775
+		luxury_food = 48775
+		luxury_items = 195099
+		art = 195099
+	}
+}
+wealth_90 = {
+	political_strength = 1300
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 80480
+		luxury_drinks = 53653
+		free_movement = 53653
+		communication = 53653
+		luxury_food = 53653
+		luxury_items = 214614
+		art = 214614
+	}
+}
+wealth_91 = {
+	political_strength = 1320
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 88530
+		luxury_drinks = 59020
+		free_movement = 59020
+		communication = 59020
+		luxury_food = 59020
+		luxury_items = 236081
+		art = 236081
+	}
+}
+wealth_92 = {
+	political_strength = 1340
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 97385
+		luxury_drinks = 64923
+		free_movement = 64923
+		communication = 64923
+		luxury_food = 64923
+		luxury_items = 259694
+		art = 259694
+	}
+}
+wealth_93 = {
+	political_strength = 1360
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 107126
+		luxury_drinks = 71417
+		free_movement = 71417
+		communication = 71417
+		luxury_food = 71417
+		luxury_items = 285669
+		art = 285669
+	}
+}
+wealth_94 = {
+	political_strength = 1380
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 117840
+		luxury_drinks = 78560
+		free_movement = 78560
+		communication = 78560
+		luxury_food = 78560
+		luxury_items = 314241
+		art = 314241
+	}
+}
+wealth_95 = {
+	political_strength = 1400
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 129626
+		luxury_drinks = 86418
+		free_movement = 86418
+		communication = 86418
+		luxury_food = 86418
+		luxury_items = 345670
+		art = 345670
+	}
+}
+wealth_96 = {
+	political_strength = 1420
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 142591
+		luxury_drinks = 95061
+		free_movement = 95061
+		communication = 95061
+		luxury_food = 95061
+		luxury_items = 380243
+		art = 380243
+	}
+}
+wealth_97 = {
+	political_strength = 1440
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 156852
+		luxury_drinks = 104568
+		free_movement = 104568
+		communication = 104568
+		luxury_food = 104568
+		luxury_items = 418273
+		art = 418273
+	}
+}
+wealth_98 = {
+	political_strength = 1460
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 172539
+		luxury_drinks = 115026
+		free_movement = 115026
+		communication = 115026
+		luxury_food = 115026
+		luxury_items = 460105
+		art = 460105
+	}
+}
+wealth_99 = {
+	political_strength = 1480
+	goods = {
+		heating = 29
+		intoxicants = 216
+		services = 189795
+		luxury_drinks = 126530
+		free_movement = 126530
+		communication = 126530
+		luxury_food = 126530
+		luxury_items = 506121
+		art = 506121
+	}
+}

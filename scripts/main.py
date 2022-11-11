@@ -2,142 +2,105 @@ import os
 import sys
 import pandas as pd
 
-def GetCondition(_string):
-    #如果是索引，则跳过列
-    if _string == 'index':
-        return 'note'
-    #如果是备注，则跳过该列
-    if 'note' in _string:
-        return 'note'
-    #如果是逗号和点号，则可能是table或者array
-    if ',' in _string or '.' in _string:
-        if ',' in _string:
-            _string += 'table'
-        if '.' in _string:
-            _string += 'array'
-        return _string
-    #如果都不是，正常转换
-    return 'normal'
-
-def AddString(_title,_content):
-    return f'\t{_title} = {_content}\n'
-
-def IfNotSpace(title,content):
+def isBlankSpace(title,content):
     #检测空行
-    if content != 'nan' and title != 'nan':
+    if title == 'nan' or content == 'nan':
         return True
     else:
         return False
 
-
-
-
-def ConvertSheetToDict(df,sheetName):
-    #字段索引列表
+def ConvertSheetToContentDict(df,sheetName):
+    # 字段索引列表
     titleList = df.values.tolist()[1]
-    #中文备注索引列表
-    #noteList = df.values.tolist()[2] 
-    #数据格式列表
-    #formatList = df.values.tolist()[n]
-    #content矩阵
+    # 中文备注索引列表
+    # noteList = df.values.tolist()[2] 
+    # 数据格式列表
+    # formatList = df.values.tolist()[n]
+    # content矩阵
     contentMatrix = df.values.tolist()[3:]
-    #content字典
+    # content字典
     contentDict = dict()
-    #遍历每一行
+    # 遍历每一行和每一列
     for contentList in contentMatrix:
-        #
         index = str(contentList[0])
-        if contentList[0] == 'nan':
+        if index == 'nan':
             continue
         contentDict[index] = dict()
-        #获取一共多少列
-        column,columnMax = 0,len(titleList)
-        #遍历列
+        # 遍历该行的每一列
+        column,columnMax = 1,len(titleList)
         while column < columnMax:
-            #标题列
+            # 获取列的标题和内容
             title = str(titleList[column])
-            #内容列
             content = str(contentList[column])
-            #查看标题和内容
-            #print(title,content)
-            #确定处理方式
-            condition = GetCondition(title)
-            #如果处理为数组
-            if 'table' in condition:
-                #如果有点号，则添加对应的字典层级
-                if 'array' in condition:
-                    hierachies = title.split('.')
-                    title = hierachies[-1:][0]
-                    #ReadHierachy(contentDict[index],hierachies)
-                #拆开array字段获取长度和宽度
+            # 是否存在层级
+            if '.' in title:
+                hierachies = title.split('.')
+                title = hierachies[-1:][0]
+                # ReadHierachy(contentDict[index],hierachies)
+            # 是否为多维数组
+            if ',' in title:
+                # 拆开array字段获取长度和宽度
                 array = title.split(',')
                 arrayName,arrayLength,arrayDepth = str(array[0]),int(array[1]),int(array[2])
-                #如果是value和type
+                # 如果是type和value形式的
                 if arrayDepth == 2:
-                    #开头
                     hierachy = dict()
                     column += 1
-                    # 遍历
                     for pos in range(arrayLength):
-                        #确保column不会溢出
+                        # 确保column不会溢出
                         if column >= columnMax:
                             break
-                        #设置title和content
-                        title_1 = str(titleList[column])
-                        content_1 = str(contentList[column])
-                        #判断是否仍然在数组
-                        if title_1 != 'type' and title_1 != 'value':
+                        # 设置type的title和content
+                        type_title = str(titleList[column])
+                        type_content = str(contentList[column])
+                        # 如果不在数组，就退出数组
+                        if type_title != 'type':
+                            print(f'【错误】：{index}第{column}列的字段应为\"type\"')
                             break
-                        #遍历下一列
+                        # 设置value的title和content
                         column += 1
-                        #设置tilte和content
-                        title_2 = str(titleList[column])
-                        content_2 = str(contentList[column])
-                        #检查type、value以及空行
-                        if title_1 == 'type' and title_2 == 'value' and IfNotSpace(content_1,content_2):
-                            hierachy[content_1] = content_2
-                        #遍历下一列
+                        value_title = str(titleList[column])
+                        value_content = str(contentList[column])
+                        # 如果不在数组，就退出数组
+                        if value_title != 'value':
+                            print(f'【错误】：{index}第{column}列的字段应为\"value\"')
+                            break
+                        # 检查type、value以及空行
+                        if not isBlankSpace(type_content,value_content):
+                            hierachy[type_content] = value_content
                         column += 1
                     column -= 1
-                #如果只有value
+                # 如果只有value
                 if arrayDepth == 1:
-                    column += 1
                     hierachy = list()
+                    column += 1
                     for pos in range(arrayLength):
-                        #确保column不会溢出
+                        # 确保column不会溢出
                         if column >= columnMax:
                             break
-                        #设置title和content
-                        title_1 = str(titleList[column])
-                        content_1 = str(contentList[column])
+                        # 设置title和content
+                        value_title = str(titleList[column])
+                        value_content = str(contentList[column])
                         #判断是否仍在数组
-                        if title_1 != 'value':
+                        if value_title != 'value':
                             break
                         #检查value以及空行
-                        if title_1 == 'value' and IfNotSpace(title_1,content_1):
-                            content_1
-                            hierachy.append(f'\t\t{content_1}\n')
+                        if value_title == 'value' and not isBlankSpace(value_title,value_content):
+                            hierachy.append(f'{value_content}')
                         column += 1
                     column -= 1
-                #是否存在多维数组层级
-                if 'array' in condition:
-                    #存在则添加多维数组层级
-                    #给hierachies加arrayName
+                # 是否存在多维数组层级
+                if '.' in title:
+                    # 存在则添加多维数组层级
+                    # 给hierachies加arrayName
                     hierachies.pop(-1)
                     hierachies.append(arrayName)
                     AddHierachy(contentDict[index],hierachies,hierachy)
                 else:
                     #不存在则正常添加层级
-                    if arrayDepth == 2:
-                        contentDict[index][arrayName] = hierachy
-                    if arrayDepth == 1:
-                        contentDict[index][arrayName] = hierachy
-            # 如果是数组
-            if condition == 'array':
-                None
-            #如果没有特殊处理而且不是空行
-            if condition == 'normal' and IfNotSpace(title,content):
-                #写一行
+                    contentDict[index][arrayName] = hierachy
+            #如果没有特殊处理而且不是空行，写一行
+            elif 'note' not in title and not isBlankSpace(title,content):
                 contentDict[index][title] = content
             #下一列
             column += 1
@@ -160,108 +123,105 @@ def AddHierachy(hierachyDict,hierachies,hierachy):
         hierachyDict[hierachies[0]] = dict()
         hierachyDict = AddHierachy(hierachyDict[hierachies[0]], hierachies[1:],hierachy)
     return hierachyDict
-       
-def GetStringDictionary(df):
-    #字段索引列表
-    titleList = df.values.tolist()[1]
-    #中文备注索引列表
-    #noteList = df.values.tolist()[2] 
-    #数据格式列表
-    #formatList = df.values.tolist()[n]
-    #content矩阵
-    contentMatrix = df.values.tolist()[3:]
-    #content字典
-    stringDict = dict()
-    for contentList in contentMatrix:
-        index = str(contentList[0])
-        if contentList[0] == 'nan':
-            continue
-        #获取一共多少列
-        column,columnMax = 0,len(titleList)
-        #遍历列
-        while column < columnMax :
-            #标题列
-            title = str(titleList[column])
-            #如果title是value
-            if title == 'value':
-                #内容列
-                content = str(contentList[column])
-                #赋值
-                stringDict[index] = content
-            column += 1
-    return stringDict
     
-def FourSpace(level):
+# 添加水平制表符\t
+def AddHorizontalTab(level):
+    s = ''
     for i in range(level):
-        return '\t'
-    return ''
+        s += '\t'
+    return s
 
 class Reader():
     
-    def __init__(self,sheetName,stringDict,):
-        self.txt = f'# sheet is {sheetName}\n'
-        self.stringDict = stringDict
-        self.stringList = list(stringDict.keys())
+    def __init__(self,):
+        self.txt = ''
+        
+        self.stringReplaceDictKeys = list()
+        self.stringReplaceDict = dict()
+        
+        self.contentDict = dict()
+        self.sheetList = list()
+        
+        self.english = 'l_english:\n'
+        self.simp_chinese = 'l_simp_chinese:\n'
 
-    def IfInStringDictionary(self,s):
-        #如果在字符串字典中，则修改文本
-        if s in self.stringList:
-            return self.stringDict[s]
+    def GetStringReplaceDict(self,df):
+        # 字段索引列表
+        titleList = df.values.tolist()[1]
+        # content矩阵
+        contentMatrix = df.values.tolist()[3:]
+        # 遍历contentMatrix的每一行和每一列
+        for contentList in contentMatrix:
+            # 声明table名称index
+            index = str(contentList[0])
+            value = str(contentList[1])
+            # 如果碰到index为空，则跳过到下一行
+            if index == 'nan':
+                continue
+            # 赋值
+            self.stringReplaceDict[index] = value
+            # 遍历当前行的每一列，用于本地化
+            for column in range(len(titleList)):
+                title = str(titleList[column])
+                content = str(contentList[column])
+                if title == 'localization_english' and content != 'nan':
+                    self.english += f' {value}:0 \"{content}\"\n'
+                if title == 'localization_simp_chinese' and content != 'nan':
+                    self.simp_chinese += f' {value}:0 \"{content}\"\n'
+        self.stringReplaceDictKeys = list(self.stringReplaceDict.keys())
+    
+    def Localization(self,name):
+        # 写入文件，以utf-8 with BOM的编码方式
+        with open( f'{localPath}\\{name}_100_l_english.yml','w', encoding='utf_8_sig') as f:
+            f.write(self.english)
+        with open( f'{localPath}\\{name}_100_l_simp_chinese.yml','w', encoding='utf_8_sig') as f:
+            f.write(self.simp_chinese)
+    
+    #如果在字符串替代字典中，则修改文本
+    def isReplacable(self,s):
+        if s in self.stringReplaceDictKeys:
+            return self.stringReplaceDict[s]
         return s
-
+    # 阅读列表
+    def ReadList(self,htLevel,thisKey,thisValue):
+        if len(thisValue) > 0:
+            self.txt += f'{AddHorizontalTab(htLevel)}{thisKey}'+' = {\n'
+            for element in thisValue:
+                element = self.isReplacable(element)
+                self.txt += f'{AddHorizontalTab(htLevel)}\t{element}\n'
+            self.txt += f'{AddHorizontalTab(htLevel)}'+'}\n'
+    # 阅读字符串
+    def ReadStr(self,htLevel,thisKey,thisValue):
+        thisKey = self.isReplacable(thisKey)
+        thisValue = self.isReplacable(thisValue)
+        self.txt += f'{AddHorizontalTab(htLevel)}{thisKey} = {thisValue}\n'
+    # 阅读字典
+    def ReadDict(self,htLevel,thisValue):
+        for nextKey in list(thisValue.keys()):
+            nextValue = thisValue[nextKey]
+            if isinstance(nextValue,dict):
+                if len(nextValue) > 0:
+                    _key = self.isReplacable(nextKey)
+                    _value = self.isReplacable(thisValue[nextKey])
+                    self.txt += f'{AddHorizontalTab(htLevel)}{_key} = ' + '{\n'
+                    self.ReadContentDictValue(htLevel,_key,_value)
+                    self.txt += f'{AddHorizontalTab(htLevel)}' + '}\n'
+            elif isinstance(nextValue,list):
+                self.ReadList(htLevel,nextKey,nextValue)
+            elif isinstance(nextValue,str):
+                self.ReadStr(htLevel,nextKey,nextValue)
     # 阅读sheet内容
-    def ReadContentDictValue(self,level,key,value):
-        level += 1
-        #如果是字典
-        if isinstance(value,dict):
-            for _value in list(value.keys()):
-                #判断是不是字典
-                if isinstance(value[_value],dict):
-                    #如果是字典，判断长度
-                    if len(value[_value]) > 0:
-                        #如果字典长度大于0，则递归
-                        key1 = self.IfInStringDictionary(_value)
-                        value1 = self.IfInStringDictionary(value[_value])
-                        self.txt += f'{FourSpace(level)}{key1} = ' + "{\n"
-                        self.ReadContentDictValue(level,key1,value1)
-                        self.txt += f'{FourSpace(level)}' + "}\n"
-                elif isinstance(value[_value],list):
-                    # 检测列表元素个数是否大于0
-                    if len(value[_value]) > 0:
-                        #直接添加list的元素
-                        self.txt += f'{FourSpace(level)}{_value} = ' + "{\n"
-                        for element in value[_value]:
-                            # 实际运行中发现会有2个\t和1个\n，需要去除
-                            element = element.replace('\t','')
-                            element = element.replace('\n','')
-                            element = self.IfInStringDictionary(element)
-                            self.txt += f'{FourSpace(level+1)}{element}'+"\n"
-                        self.txt += f'{FourSpace(level)}' + "}\n"
-                elif isinstance(value[_value],str):
-                    #是字符串，直接赋值
-                    key1 = self.IfInStringDictionary(_value)
-                    value1 = self.IfInStringDictionary(value[_value])
-                    self.txt += f'{FourSpace(level)}{key1} = {value1}\n'
-        elif isinstance(value,list):
-            # 检测列表元素个数是否大于0
-            if len(value[_value]) > 0:
-                #直接添加list的元素
-                for element in value:
-                    element = self.IfInStringDictionary(element)
-                    self.txt += f'{FourSpace(level-2)}{element}'
-        elif isinstance(value,str):
-            #直接添加字符串
-            key = self.IfInStringDictionary(key)
-            value = self.IfInStringDictionary(value)
-            self.txt += f'{FourSpace(level)}{key} = {value}\n'
-        return key,value
+    def ReadContentDictValue(self,htLevel,thisKey,thisValue):
+        htLevel += 1
+        if isinstance(thisValue,dict):
+            self.ReadDict(htLevel, thisValue)            
+        elif isinstance(thisValue,list):
+            self.ReadList(htLevel,thisKey,thisValue)
+        elif isinstance(thisValue,str):
+            self.ReadStr(htLevel,thisKey,thisValue)
+        return thisKey,thisValue
 
 if __name__ == '__main__':
-    #=============================
-
-
-
-    #=============================
     try:
         rootPath = sys.argv[1] #获得根路径
     except IndexError:
@@ -270,94 +230,90 @@ if __name__ == '__main__':
     print('=====进入python=====')
     print("当前python版本: ", sys.version)
     
-    #修正根目录丢失'\'的可能错误
+    # 修正根目录丢失'\'的可能错误
     if rootPath[-1:] != '\\':
         rootPath = rootPath + '\\'
-    #获得excel的路径
+    # 获得excel和txt的路径
     excelPath = rootPath + 'excel\\'
-    #获得txt的路径
-    txtPath = rootPath + 'excel\\txt\\'
+    commonPath = rootPath + 'excel\\common\\'
+    localPath = rootPath + 'excel\\localization\\'
+    # 如果没有目录就创建目录
+    if not os.path.exists(commonPath):
+        os.mkdir(commonPath)
+    if not os.path.exists(localPath):
+        os.mkdir(localPath)
     #提示各种目录
     print('========目录========')
     print(f'当前excel目录：{excelPath}')
-    print(f'当前的txt目录：{txtPath}')
+    print(f'当前的common目录：{commonPath}')
+    
     print('========进度========')
     #获得excel路径下所有文件
     stream = os.listdir(excelPath) 
     
     #声明可用后缀条件列表
-    condition_suffix = ['.xlsx','.xlsm']
-    
-    #声明不可用后缀条件列表
-    condition_ban = dict() 
-    condition_ban['.xls'] = '警告：只能使用.xlsx后缀，最好不要使用.xls后缀'
-    
+    suffix_permit = ['.xlsx','.xlsm']
+
     #声明excel文件的列表
     fileList = list() 
     #遍历excel路径下的所有文件，获取待处理文件
     for file in stream:
-        ifAppendFile = True
-        #可用后缀
-        if file[-5:] not in condition_suffix: 
-            ifAppendFile = False
-        #不可用后缀
-        if file[-4:] in condition_ban.keys(): 
-            ifAppendFile = False
-            print(condition_ban[file[-4:0]])
-        #不读取被打开的excel文件
-        if file[:2] == '~$':
-            ifAppendFile = False
-            print('警告：检测到可能有正在打开的excel文件，这可能导致转表失败，请查验\n')
-        # 跳过忽略的excel文件
-        if file[:1] == '!':
-            ifAppendFile = False
-            print('跳过 ! 开头的文件：'+str(file)+'\n')
-        if ifAppendFile:
-            fileList.append(file)
-    #特殊处理的列表，暂无开发
+        #检测不可用后缀
+        if '.xls' in file and '.xlsm' not in file:
+            print('【警告】只能使用.xlsx后缀，不要使用.xls后缀')
+            continue
+        elif '~$' in file:
+            print('【警告】检测到可能有正在打开的excel文件，这可能导致转表失败，请查验')
+            continue
+        elif '!' in file:
+            print(f'【提示】跳过包含\"!\"的文件：{file}')
+            continue
+        # 检测是否包含可用后缀，如果有，加入fileList
+        for suffix in suffix_permit:
+            if suffix in file:
+                fileList.append(file)
+            
+    # 特殊处理的列表，暂无开发
     specialSheet = []
-    #处理所有符合条件的excel文件
+    
+    # 处理所有符合条件的excel文件
     for file in fileList:
-        #打印处理excel的信息
         print(f'处理excel：{file}' ) 
-        #获取sheet
-        _sheetList = list(pd.read_excel(f'{excelPath}\\{file}',sheet_name=None).keys()) 
-        #声明sheetList
-        sheetList = list() 
-        #sheetList赋值
-        for i in range(len(_sheetList)): 
-            if _sheetList[i] == 'string_dictionary':
-                #打印处理sheet的信息
-                print(f'--处理sheet：{_sheetList[i]}.txt') 
-                #初始化DataFrame
-                df = pd.DataFrame(pd.read_excel(f'{excelPath}\\{file}',sheet_name=_sheetList[i],header=None))
-                #转stringDict表
-                stringDict = GetStringDictionary(df)
-                #print(stringDict)
-                continue
-            if 'note' not in _sheetList[i]:
-                sheetList.append(_sheetList[i])
-        #遍历每个sheet
-        for sheet in sheetList:
-            #打印处理sheet的信息
-            print(f'--处理sheet：{sheet}.txt') 
-            #初始化DataFrame
+        # 声明reader
+        reader = Reader()
+        # 声明sheetList
+        sheetList = list(pd.read_excel(f'{excelPath}\\{file}',sheet_name=None).keys())
+        # 剔除note sheet;处理string_dictionary sheet
+        for index in range(len(sheetList)):
+            if sheetList[index] == 'string_dictionary':
+                print(f'--处理sheet：{sheetList[index]}.txt') 
+                # 初始化DataFrame
+                df = pd.DataFrame(pd.read_excel(f'{excelPath}\\{file}',sheet_name=sheetList[index],header=None))
+                # 初始化stringReplaceDict
+                reader.GetStringReplaceDict(df)
+                # 生成本地化文本
+                localName = str(df.values.tolist()[0][0])[9:]
+                reader.Localization(localName)
+            elif 'note' not in sheetList[index]:
+                reader.sheetList.append(sheetList[index])
+        # 遍历每个sheet
+        for sheet in reader.sheetList:
+            reader.txt = ''
+            # 初始化DataFrame
             df = pd.DataFrame(pd.read_excel(f'{excelPath}\\{file}',sheet_name=sheet,header=None))
-            #处理sheet
-            contentDict = ConvertSheetToDict(df,sheet)
-            #
-            reader = Reader(sheet,stringDict)
-            reader.ReadContentDictValue(-1,'',contentDict)
-            #写入文件，以utf-8 with BOM的方式
-            with open( f'{txtPath}{sheet}.txt','w', encoding='utf_8_sig') as f:
+            address = str(df.values.tolist()[0][0])[8:]
+            print(f'--处理sheet：{address}\\{sheet}.txt')
+            if address == '':
+                print(f'【警告】未找到{sheet}的文件夹地址，会直接生成在common文件夹下')
+            # 处理sheet
+            reader.contentDict = ConvertSheetToContentDict(df,sheet)
+            # 阅读contentDict
+            reader.ReadContentDictValue(-1,'',reader.contentDict)
+            # 写入文件，以utf-8 with BOM的编码方式
+            if not os.path.exists(commonPath+address):
+                os.mkdir(commonPath+address)
+            with open( f'{commonPath}{address}\\{sheet}.txt','w', encoding='utf_8_sig') as f:
                 f.write(reader.txt)
-            """
-            if sheet in specialSheet:
-                None
-            """
-        #打印间隔
-        print('\n')
-
     print('=====退出python=====')
 
 
