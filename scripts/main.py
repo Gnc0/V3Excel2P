@@ -32,11 +32,11 @@ def ConvertSheetToContentDict(df,sheetName):
             # 获取列的标题和内容
             title = str(titleList[column])
             content = str(contentList[column])
+            hierachies = ''
             # 是否存在层级
             if '.' in title:
                 hierachies = title.split('.')
                 title = hierachies[-1:][0]
-                # ReadHierachy(contentDict[index],hierachies)
             # 是否为多维数组
             if ',' in title:
                 # 拆开array字段获取长度和宽度
@@ -83,6 +83,7 @@ def ConvertSheetToContentDict(df,sheetName):
                         value_content = str(contentList[column])
                         #判断是否仍在数组
                         if value_title != 'value':
+                            print(f'【错误】：{index}第{column}列的字段应为\"value\"')
                             break
                         #检查value以及空行
                         if value_title == 'value' and not isBlankSpace(value_title,value_content):
@@ -90,7 +91,7 @@ def ConvertSheetToContentDict(df,sheetName):
                         column += 1
                     column -= 1
                 # 是否存在多维数组层级
-                if '.' in title:
+                if isinstance(hierachies,list):
                     # 存在则添加多维数组层级
                     # 给hierachies加arrayName
                     hierachies.pop(-1)
@@ -100,7 +101,7 @@ def ConvertSheetToContentDict(df,sheetName):
                     #不存在则正常添加层级
                     contentDict[index][arrayName] = hierachy
             #如果没有特殊处理而且不是空行，写一行
-            elif 'note' not in title and not isBlankSpace(title,content):
+            if 'note' not in title and not isBlankSpace(title,content):
                 contentDict[index][title] = content
             #下一列
             column += 1
@@ -196,25 +197,32 @@ class Reader():
         thisValue = self.isReplacable(thisValue)
         self.txt += f'{AddHorizontalTab(htLevel)}{thisKey} = {thisValue}\n'
     # 阅读字典
-    def ReadDict(self,htLevel,thisValue):
+    def ReadDict(self,htLevel,thisKey,thisValue):
+        if len(thisValue) > 0 and thisKey != '':
+            self.txt += f'{AddHorizontalTab(htLevel)}{thisKey} = ' + '{\n'
+            htLevel += 1
         for nextKey in list(thisValue.keys()):
             nextValue = thisValue[nextKey]
             if isinstance(nextValue,dict):
                 if len(nextValue) > 0:
                     _key = self.isReplacable(nextKey)
                     _value = self.isReplacable(thisValue[nextKey])
-                    self.txt += f'{AddHorizontalTab(htLevel)}{_key} = ' + '{\n'
+                    htLevel -= 1
                     self.ReadContentDictValue(htLevel,_key,_value)
-                    self.txt += f'{AddHorizontalTab(htLevel)}' + '}\n'
+                    htLevel += 1
             elif isinstance(nextValue,list):
                 self.ReadList(htLevel,nextKey,nextValue)
             elif isinstance(nextValue,str):
                 self.ReadStr(htLevel,nextKey,nextValue)
+        if len(thisValue) > 0 and thisKey != '':
+            htLevel -= 1
+            self.txt += f'{AddHorizontalTab(htLevel)}' + '}\n'
+        
     # 阅读sheet内容
     def ReadContentDictValue(self,htLevel,thisKey,thisValue):
         htLevel += 1
         if isinstance(thisValue,dict):
-            self.ReadDict(htLevel, thisValue)            
+            self.ReadDict(htLevel,thisKey,thisValue)            
         elif isinstance(thisValue,list):
             self.ReadList(htLevel,thisKey,thisValue)
         elif isinstance(thisValue,str):
