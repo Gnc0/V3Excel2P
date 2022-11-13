@@ -93,15 +93,17 @@ def ConvertSheetToContentDict(df,sheetName):
                 # 是否存在多维数组层级
                 if isinstance(hierachies,list):
                     # 存在则添加多维数组层级
-                    # 给hierachies加arrayName
                     hierachies.pop(-1)
                     hierachies.append(arrayName)
                     AddHierachy(contentDict[index],hierachies,hierachy)
                 else:
-                    #不存在则正常添加层级
+                    # 不存在则正常添加层级
                     contentDict[index][arrayName] = hierachy
+            # 检查hierachies
+            elif isinstance(hierachies,list) and not isBlankSpace(title,content):
+                AddHierachy(contentDict[index],hierachies,content)     
             #如果没有特殊处理而且不是空行，写一行
-            if 'note' not in title and not isBlankSpace(title,content):
+            elif 'note' not in title and not isBlankSpace(title,content):
                 contentDict[index][title] = content
             #下一列
             column += 1
